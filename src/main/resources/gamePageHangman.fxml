@@ -16,7 +16,7 @@
          </font>
       </Button>
 
-      <Label fx:id="outputOfLines" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" text="printLines&#10;" textAlignment="CENTER" textFill="#f9fdfa">
+      <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" textAlignment="CENTER" textFill="#f9fdfa">
          <font>
             <Font name="Copperplate Gothic Bold" size="36.0" />
          </font>
@@ -37,6 +37,11 @@
             <Bloom />
          </effect>
       </Label>
+      <TextArea fx:id="status" layoutX="471.0" layoutY="63.0" prefHeight="30.0" prefWidth="200.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </TextArea>
 
 
    </children>

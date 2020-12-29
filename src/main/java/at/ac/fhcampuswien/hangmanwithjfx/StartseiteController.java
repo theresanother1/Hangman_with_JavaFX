@@ -22,16 +22,24 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
+import static java.lang.Character.toLowerCase;
+
 public class StartseiteController {
 
     @FXML
     public Button startButton;
 
-    public Gameplay gameplay;
+    public Gameplay gameplay = new Gameplay();
+    public static String thisWord;
+    public static char[] lines;
 
-    @FXML //annotation wieder, in fxml Datei mit onAction = "#methodenname"
+    @FXML
     protected void pressToPlay(ActionEvent actionEvent){
-        gameplay = new Gameplay();
+        thisWord = gameplay.randomWord();
+        System.out.println(thisWord);
+        //thisWord = gameplay.wordToFind;
+        System.out.println(gameplay.printLines(thisWord));
+        lines = gameplay.printLines(thisWord);
         Stage newStage = (Stage) startButton.getScene().getWindow();
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/gamePageHangman.fxml"));

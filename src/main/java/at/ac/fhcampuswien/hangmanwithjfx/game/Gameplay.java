@@ -12,28 +12,20 @@ public class Gameplay {
     public int errorCount;
     public char[] lines;
     boolean restart = true;
-    private ChooseRandomWord theRandomWord;
-    public String wordToFind;
-
+    public String wordToFind = " ";
 
 
     public Gameplay(){
-        allLetters = new char[MAXERRORS];
-        errorCount = 0;
-        wordToFind = randomWord();
-        System.out.println(wordToFind);
+        reset();
     }
 
     public void reset() {
         //Methode setzt alles auf Anfang zurück; boolean übergeben???
         letter = ' ';
         allLetters = new char[MAXERRORS];
-        for(int i = 0; i<allLetters.length; i++){
-            allLetters[i] = ' ';
-        }
+        Arrays.fill(allLetters, ' ');
         errorCount = 0;
-        wordToFind = "";
-
+        printLines(wordToFind);
     }
     public String randomWord() {
         //wählt ein zufälliges Wort aus Datenbank bzw. ArrayList aus
@@ -60,22 +52,17 @@ public class Gameplay {
                 "medicine", "six", "seven", "flower", "rose", "petal"};
         Random random = new Random();
         int index = random.nextInt(dictionary.length);
-        wordToFind = dictionary[index];
+        this.wordToFind = dictionary[index];
         return wordToFind;
     }
-    public char[] printLines (String word){
-        //___ für Zeichenanzahl von randomWord
-        //Array of characters oder String mit der Länge String Word
-        //printet ___
 
-        //asterisk = new String(new char[wordToFind.length()]).replace("\0", "_");
-        //System.out.println(asterisk);
-
+   public char[] printLines (String word){
+        //Array of characters mit der Länge String Wort, printet ___
         this.lines = new char[word.length()];
         for(int i=0; i<word.length(); i++){
             lines[i] = '_';
         }
-        System.out.println(lines);
+        //System.out.println(lines);
         return lines;
     }
 
@@ -89,11 +76,12 @@ public class Gameplay {
         //return inputword;
     }
 
-    public boolean checkForDuplicates() {
+    public boolean checkForDuplicates(String input) {
         //user input Buchstabe übernehmen
         //mit bisher eingegebenen Buchstaben vergleichen
         //if doppelt true -> userInput
         //if doppelt false -> checkLetter
+        this.letter = toLowerCase(input.charAt(0));
         char checkLetter = this.letter;
         boolean duplicate = false;
 
@@ -115,7 +103,7 @@ public class Gameplay {
         return duplicate;
     }
 
-    public void checkLetter() {
+    public boolean checkLetter(char c, String s) {
         //if letter correct
         //Linie an der Stelle des Buchstaben wird durch Buchstaben ersetzt
         //if letter incorrect
@@ -124,6 +112,7 @@ public class Gameplay {
         //Buchstabe muss mit den Buchstaben im Wort verglichen werden
         //char Array mit randomWort
 
+        wordToFind = s;
         char noDuplicate = this.letter;
         //System.out.println("start");
         boolean test = false;
@@ -141,13 +130,13 @@ public class Gameplay {
                 newasterisk += wordToFind.charAt(i);
             }*/
         }
-        if (test == false){
+        if (!test){
             //System.out.println("else");
             errorCount ++;
             System.out.println(lines);
             System.out.println("Oops! " + (MAXERRORS-errorCount) +" Lives left");
             //newasterisk += "_"; //newasterix generiert
-        }
+        } return test;
         //System.out.println("end");
 
         /* win or lose
