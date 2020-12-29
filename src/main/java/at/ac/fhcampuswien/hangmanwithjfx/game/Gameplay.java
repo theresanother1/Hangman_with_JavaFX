@@ -12,10 +12,17 @@ public class Gameplay {
     public int errorCount;
     public char[] lines;
     boolean restart = true;
-
-    //word extra definiert, glaube, das brauchen wir als allgemeine Variable
+    private ChooseRandomWord theRandomWord;
     public String wordToFind;
-    //public static String asterisk;
+
+
+
+    public Gameplay(){
+        allLetters = new char[MAXERRORS];
+        errorCount = 0;
+        wordToFind = randomWord();
+        System.out.println(wordToFind);
+    }
 
     public void reset() {
         //Methode setzt alles auf Anfang zurück; boolean übergeben???
@@ -28,7 +35,6 @@ public class Gameplay {
         wordToFind = "";
 
     }
-
     public String randomWord() {
         //wählt ein zufälliges Wort aus Datenbank bzw. ArrayList aus
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
@@ -57,7 +63,6 @@ public class Gameplay {
         wordToFind = dictionary[index];
         return wordToFind;
     }
-
     public char[] printLines (String word){
         //___ für Zeichenanzahl von randomWord
         //Array of characters oder String mit der Länge String Word

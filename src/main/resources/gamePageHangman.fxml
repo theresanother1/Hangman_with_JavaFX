@@ -8,24 +8,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="600.0" prefWidth="845.0" styleClass="image"
-            stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.gamePageController">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.gamePageController">
    <children>
-      <Button fx:id="continueButton"
-              blendMode="SCREEN" layoutX="447.0" layoutY="468.0"
-              mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="248.0"
-              text="check your letter here">
+      <Button fx:id="continueButton" blendMode="SCREEN" layoutX="447.0" layoutY="468.0" mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="248.0" text="check your letter here">
          <font>
             <Font name="Copperplate Gothic Bold" size="12.0" />
          </font>
       </Button>
 
-      <Label fx:id="outputOfLines" layoutX="367.0" layoutY="220.0" prefHeight="106.0" prefWidth="430.0"
-             text="Hier steht das aktuell gesuchte Wort" textAlignment="CENTER" textFill="#f9fdfa">
+      <Label fx:id="outputOfLines" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" text="printLines&#10;" textAlignment="CENTER" textFill="#f9fdfa">
          <font>
-            <Font name="Copperplate Gothic Bold" size="24.0" />
+            <Font name="Copperplate Gothic Bold" size="36.0" />
          </font>
          <effect>
             <Bloom />
@@ -34,11 +27,9 @@
 
       <TextArea layoutX="85.0" layoutY="406.0" prefHeight="46.0" prefWidth="200.0" text="Bild ist invisible gesetzt" />
 
-      <TextField fx:id="checkThisInputLetter"
-                 layoutX="548.0" layoutY="429.0" prefHeight="26.0" prefWidth="46.0" />
+      <TextField fx:id="checkThisInputLetter" layoutX="548.0" layoutY="429.0" prefHeight="26.0" prefWidth="46.0" />
 
-      <Label layoutX="488.0" layoutY="406.0" prefHeight="18.0" prefWidth="187.0"
-             text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa">
+      <Label layoutX="488.0" layoutY="406.0" prefHeight="18.0" prefWidth="187.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa">
          <font>
             <Font name="Copperplate Gothic Bold" size="12.0" />
          </font>
@@ -46,6 +37,7 @@
             <Bloom />
          </effect>
       </Label>
+
 
    </children>
 </AnchorPane>
