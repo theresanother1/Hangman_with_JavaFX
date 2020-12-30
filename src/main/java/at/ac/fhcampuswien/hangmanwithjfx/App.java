@@ -1,6 +1,5 @@
 package at.ac.fhcampuswien.hangmanwithjfx;
 
-import at.ac.fhcampuswien.hangmanwithjfx.game.Gameplay;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +16,7 @@ public class App extends Application  {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-            Parent root = FXMLLoader.load(getClass().getResource("/startHangman.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
             primaryStage.setTitle("This is HANGMAN!");
             primaryStage.setScene(new Scene(root, 845, 600));
             primaryStage.show();

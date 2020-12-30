@@ -16,17 +16,37 @@ public class Gameplay {
 
 
     public Gameplay(){
-        reset();
+        //Konstruktor setzt alles auf 0 / Startwert
+        System.out.println("Konstruktor Start");
+        this.letter = ' ';
+        this.allLetters = new char[MAXERRORS];
+        Arrays.fill(allLetters, ' ');
+        System.out.println(allLetters + "Konstruktor");
+        this.errorCount = 0;
+        this.wordToFind = randomWord();
+        System.out.println(wordToFind+ " klasse");
+        //printLines(wordToFind);
+        printLines();
+        //this.lines = new char[wordToFind.length()];
+        System.out.println(lines + "klasse");
+        //Arrays.fill(lines, '_');
+        System.out.println(Arrays.toString(lines) + " klasse"); //checks for lines being set up
+        System.out.println("Konstruktor Stopp");
     }
 
-    public void reset() {
+   /* public void reset() {
         //Methode setzt alles auf Anfang zurück; boolean übergeben???
         letter = ' ';
         allLetters = new char[MAXERRORS];
         Arrays.fill(allLetters, ' ');
         errorCount = 0;
-        printLines(wordToFind);
+        wordToFind = randomWord();
+        //printLines(wordToFind);
+        this.lines = new char[wordToFind.length()];
+
     }
+
+    */
     public String randomWord() {
         //wählt ein zufälliges Wort aus Datenbank bzw. ArrayList aus
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
@@ -56,10 +76,10 @@ public class Gameplay {
         return wordToFind;
     }
 
-   public char[] printLines (String word){
+   public char[] printLines (){
         //Array of characters mit der Länge String Wort, printet ___
-        this.lines = new char[word.length()];
-        for(int i=0; i<word.length(); i++){
+        this.lines = new char[wordToFind.length()];
+        for(int i=0; i<wordToFind.length(); i++){
             lines[i] = '_';
         }
         //System.out.println(lines);
@@ -96,6 +116,7 @@ public class Gameplay {
             for (int i = 0; i < MAXERRORS; i++) {
                 if (allLetters[i] == ' ') {
                     allLetters[i] = checkLetter;
+                    System.out.println(allLetters);
                     break;
                 }
             }
