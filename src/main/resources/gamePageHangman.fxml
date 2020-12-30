@@ -37,7 +37,7 @@
             <Bloom />
          </effect>
       </Label>
-      <TextArea fx:id="status" layoutX="471.0" layoutY="63.0" prefHeight="30.0" prefWidth="200.0">
+      <TextArea fx:id="status" layoutX="471.0" layoutY="63.0" prefHeight="30.0" prefWidth="200.0" text="test">
          <font>
             <Font name="Copperplate Gothic Bold" size="14.0" />
          </font>
