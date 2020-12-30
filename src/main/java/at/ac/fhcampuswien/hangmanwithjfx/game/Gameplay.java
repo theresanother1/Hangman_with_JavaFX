@@ -21,14 +21,14 @@ public class Gameplay {
         this.letter = ' ';
         this.allLetters = new char[MAXERRORS];
         Arrays.fill(allLetters, ' ');
-        System.out.println(allLetters + "Konstruktor");
+        System.out.println(Arrays.toString(allLetters) + "Konstruktor");
         this.errorCount = 0;
         this.wordToFind = randomWord();
         System.out.println(wordToFind+ " klasse");
         //printLines(wordToFind);
         printLines();
         //this.lines = new char[wordToFind.length()];
-        System.out.println(lines + "klasse");
+        //System.out.println(lines + "klasse");
         //Arrays.fill(lines, '_');
         System.out.println(Arrays.toString(lines) + " klasse"); //checks for lines being set up
         System.out.println("Konstruktor Stopp");

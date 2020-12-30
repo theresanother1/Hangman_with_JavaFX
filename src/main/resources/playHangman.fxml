@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
@@ -32,11 +34,11 @@
          </effect>
       </Label>
 
-      <HBox layoutX="445.0" layoutY="118.0" prefHeight="46.0" prefWidth="200.0">
+      <HBox layoutX="556.0" layoutY="194.0" prefHeight="47.0" prefWidth="200.0">
          <children>
             <Label fx:id="wordToCheck" prefHeight="42.0" prefWidth="201.0" textFill="#f2eeee" visible="false">
                <font>
-                  <Font name="Copperplate Gothic Bold" size="12.0" />
+                  <Font name="Copperplate Gothic Bold" size="18.0" />
                </font>
             </Label>
          </children>
@@ -48,7 +50,7 @@
          </font>
       </Button>
 
-      <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" text="printlines" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
+      <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" textAlignment="JUSTIFY" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Copperplate Gothic Bold" size="36.0" />
          </font>
@@ -66,6 +68,29 @@
          <effect>
             <Bloom />
          </effect>
+      </Label>
+
+      <ImageView fx:id="hangman1" fitHeight="142.0" fitWidth="238.0" layoutX="56.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@HangmanBild1.jpg" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="hangman2" fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@HangmanBild2.jpg" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="hangman3" fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@HangmanBild3.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="duplicate" layoutX="475.0" layoutY="387.0" prefHeight="18.0" prefWidth="211.0" text="Oooooops, that's a duplicate!" textFill="#b21818" visible="false">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
       </Label>
 
    </children>
