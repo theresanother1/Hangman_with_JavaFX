@@ -64,7 +64,6 @@ public class playHangmanController implements Initializable{
 
     @FXML //launches the game
     protected void pressToPlay(ActionEvent actionEvent) throws Exception{
-
         System.out.println(thisWord); //prints the random word to console
         System.out.println(Arrays.toString(gameplay.lines) + " pressToPlay"); //print out lines array for word
 
@@ -91,6 +90,10 @@ public class playHangmanController implements Initializable{
     //win or lose fehlt noch - derzeit ins Unendliche spielbar
     protected void pressToCheckLetter(ActionEvent actionEvent) {
         duplicate.setVisible(false);
+        /*if (checkThisInputLetter.getText() == null){
+
+        }*/
+        //checkThisInputLetter.
         System.out.println("Checked Letter: " + checkThisInputLetter.getText());
         if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
             System.out.println("checked for duplicate");
@@ -100,7 +103,15 @@ public class playHangmanController implements Initializable{
                         .replace("]", "")
                         //.replace(" ", "")
                         .replace(",", ""));
-            } else {
+                if ((Arrays.toString(gameplay.lines).replace("[", "")
+                    .replace("]", "")
+                    .replace(" ", "")
+                    .replace(",", "").equals(thisWord))){
+                System.out.println("you win");
+                    System.out.println("blubb");
+            }
+            }
+            else {
                 int errorCount = gameplay.errorCount;
                 switch (gameplay.errorCount) {
                     case 1:
@@ -132,6 +143,8 @@ public class playHangmanController implements Initializable{
                         break;
                     case 10:
                         hangman10.setVisible(true);
+                        // auf you lose gehen
+                        System.out.println("you lost");
                         break;
                 }
                 System.out.println("letter was not in word");

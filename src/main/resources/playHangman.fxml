@@ -51,7 +51,7 @@
          </font>
       </Button>
 
-      <Label fx:id="currentWordOutput" layoutX="591.0" layoutY="295.0" prefWidth="19.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
+      <Label fx:id="currentWordOutput" layoutX="481.0" layoutY="295.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="40.0" />
          </font>
@@ -60,7 +60,7 @@
          </effect>
       </Label>
 
-      <TextField fx:id="checkThisInputLetter" layoutX="577.0" layoutY="413.0" prefHeight="26.0" prefWidth="46.0" visible="false"/>
+      <TextField fx:id="checkThisInputLetter" layoutX="577.0" layoutY="413.0" prefHeight="26.0" prefWidth="46.0" visible="false" />
 
       <Label fx:id="enterLetterHere" layoutX="540.0" layoutY="387.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
          <font>
