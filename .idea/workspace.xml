@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="kleine Änderungen">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Anpassung Alignment Text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609410133976</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Anpassung Alignment Text">
+      <created>1609412069516</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609412069516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,28 +281,33 @@
     <MESSAGE value="kleine Änderungen" />
     <MESSAGE value="Cambria" />
     <MESSAGE value="text rechtsbündig" />
-    <option name="LAST_COMMIT_MESSAGE" value="text rechtsbündig" />
+    <MESSAGE value="Anpassung Alignment Text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anpassung Alignment Text" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1609411277451">
+    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1609412235024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609411277451" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1609412025391">
+    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412235024" />
+    <state width="1476" height="204" key="GridCell.Tab.0.bottom" timestamp="1609412554837">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412025391" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1609412025391">
+    <state width="1476" height="204" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
+    <state width="1476" height="204" key="GridCell.Tab.0.center" timestamp="1609412554837">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412025391" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1609412025390">
+    <state width="1476" height="204" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
+    <state width="1476" height="204" key="GridCell.Tab.0.left" timestamp="1609412554837">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412025390" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1609412025391">
+    <state width="1476" height="204" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
+    <state width="1476" height="204" key="GridCell.Tab.0.right" timestamp="1609412554837">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412025391" />
+    <state width="1476" height="204" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2" timestamp="1609412071315">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412071315" />
   </component>
 </project>

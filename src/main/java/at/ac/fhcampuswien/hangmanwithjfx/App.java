@@ -21,5 +21,9 @@ public class App extends Application  {
             //unveränderbare größe des Fensters
             primaryStage.setScene(new Scene(root, 845, 600));
             primaryStage.show();
+            primaryStage.setMinHeight(600);
+            primaryStage.setMaxHeight(600);
+            primaryStage.setMinWidth(845);
+            primaryStage.setMaxWidth(845);
         }
     }
