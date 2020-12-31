@@ -73,8 +73,8 @@ public class playHangmanController implements Initializable{
 
     @FXML //launches the game
     protected void pressToPlay(ActionEvent actionEvent) throws Exception{
-        System.out.println(thisWord); //prints the random word to console
-        System.out.println(Arrays.toString(gameplay.lines) + " pressToPlay"); //print out lines array for word
+        //System.out.println(thisWord); //prints the random word to console
+        //System.out.println(Arrays.toString(gameplay.lines) + " pressToPlay"); //print out lines array for word
 
         wordToCheck.setText(thisWord);
         currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")

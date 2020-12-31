@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="hangmantest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.playHangmanController">
+<AnchorPane fx:id="hangmantest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.playHangmanController">
    <children>
 
       <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive" visible="true">
@@ -37,7 +37,7 @@
 
       <HBox layoutX="556.0" layoutY="194.0" prefHeight="47.0" prefWidth="200.0">
          <children>
-            <Label fx:id="wordToCheck" prefHeight="42.0" prefWidth="201.0" textFill="#f2eeee" visible="true">
+            <Label fx:id="wordToCheck" prefHeight="42.0" prefWidth="201.0" textFill="#f2eeee" visible="false">
                <font>
                   <Font name="Cambria" size="18.0" />
                </font>
@@ -51,7 +51,7 @@
          </font>
       </Button>
 
-      <Label fx:id="currentWordOutput" layoutX="481.0" layoutY="295.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
+      <Label fx:id="currentWordOutput" layoutX="455.0" layoutY="295.0" prefHeight="49.0" prefWidth="371.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="40.0" />
          </font>

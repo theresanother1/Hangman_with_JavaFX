@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="invocation target exception gelöst (leeren string eingeben)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/DemoController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/demo.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609423470948</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="invocation target exception gelöst (leeren string eingeben)">
+      <created>1609426365735</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609426365735</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,6 +317,7 @@
     <MESSAGE value="Anpassung Alignment Text" />
     <MESSAGE value="woerter aktualisiert, duplicate bearbeitet" />
     <MESSAGE value="uwin, ulost" />
-    <option name="LAST_COMMIT_MESSAGE" value="uwin, ulost" />
+    <MESSAGE value="invocation target exception gelöst (leeren string eingeben)" />
+    <option name="LAST_COMMIT_MESSAGE" value="invocation target exception gelöst (leeren string eingeben)" />
   </component>
 </project>

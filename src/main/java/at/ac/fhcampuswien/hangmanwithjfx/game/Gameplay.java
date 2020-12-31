@@ -17,21 +17,21 @@ public class Gameplay {
 
     public Gameplay(){
         //Konstruktor setzt alles auf 0 / Startwert
-        System.out.println("Konstruktor Start");
+        //System.out.println("Konstruktor Start");
         this.letter = ' ';
         this.allLetters = new char[MAXERRORS];
         Arrays.fill(allLetters, ' ');
-        System.out.println(Arrays.toString(allLetters) + "Konstruktor");
+        //System.out.println(Arrays.toString(allLetters) + "Konstruktor");
         this.errorCount = 0;
         this.wordToFind = randomWord();
-        System.out.println(wordToFind+ " klasse");
+        //System.out.println(wordToFind+ " klasse");
         //printLines(wordToFind);
         printLines();
         //this.lines = new char[wordToFind.length()];
         //System.out.println(lines + "klasse");
         //Arrays.fill(lines, '_');
-        System.out.println(Arrays.toString(lines) + " klasse"); //checks for lines being set up
-        System.out.println("Konstruktor Stopp");
+        //System.out.println(Arrays.toString(lines) + " klasse"); //checks for lines being set up
+        //System.out.println("Konstruktor Stopp");
     }
 
    /* public void reset() {
