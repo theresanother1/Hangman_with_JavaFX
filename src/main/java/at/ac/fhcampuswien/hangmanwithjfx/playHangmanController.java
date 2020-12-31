@@ -31,11 +31,14 @@ public class playHangmanController implements Initializable{
     @FXML public Label duplicate;
     @FXML public Label currentWordOutput;
 
+    @FXML public ImageView hangman0;
+
     @FXML public ImageView hangman1;
     @FXML public ImageView hangman2;
     @FXML public ImageView hangman3;
     @FXML public ImageView hangman10;
     @FXML public ImageView hangmanTest;
+
 
     @FXML public Button continueButton;
 
@@ -77,6 +80,7 @@ public class playHangmanController implements Initializable{
         currentWordOutput.setVisible(true);
         continueButton.setVisible(true);
         checkThisInputLetter.setVisible(true);
+        hangman0.setVisible(true);
     }
 
 

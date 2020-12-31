@@ -51,7 +51,7 @@
          </font>
       </Button>
 
-      <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" textAlignment="JUSTIFY" textFill="#f9fdfa" visible="false">
+      <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" textAlignment="RIGHT" textFill="#f9fdfa">
          <font>
             <Font name="Cambria" size="36.0" />
          </font>
@@ -70,12 +70,6 @@
             <Bloom />
          </effect>
       </Label>
-
-      <ImageView fx:id="hangman1" fitHeight="142.0" fitWidth="238.0" layoutX="56.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" visible="false">
-         <image>
-            <Image url="@HangmanBild1.jpg" />
-         </image>
-      </ImageView>
 
       <ImageView fx:id="hangman2" fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
@@ -106,6 +100,12 @@
             <Image url="@Test.gif" />
          </image>
       </ImageView>
+
+      <ImageView fx:id="hangman0" fitHeight="243.0" fitWidth="292.0" layoutY="209.0" pickOnBounds="true" visible="false">
+      <image>
+         <Image url="@HangmanDesign0.gif" />
+      </image>
+   </ImageView>
 
    </children>
 </AnchorPane>
