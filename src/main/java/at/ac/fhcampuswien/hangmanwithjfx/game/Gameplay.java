@@ -50,6 +50,7 @@ public class Gameplay {
     public String randomWord() {
         //wählt ein zufälliges Wort aus Datenbank bzw. ArrayList aus
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
+        //https://www.hangmanwords.com/words
         String dictionary[] = {"abstraction", "ambiguous", "arithmetic", "backslash", "bitmap", "circumstance", "combination", "consequently",
                 "consortium", "decrementing", "dependency", "disambiguate", "dynamic", "encapsulation", "equivalent", "expression", "facilitate",
                 "fragment", "hexadecimal", "implementation", "indistinguishable", "inheritance", "internet", "java", "localization", "microprocessor",
