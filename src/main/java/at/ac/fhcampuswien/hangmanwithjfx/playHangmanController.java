@@ -32,13 +32,16 @@ public class playHangmanController implements Initializable{
     @FXML public Label currentWordOutput;
 
     @FXML public ImageView hangman0;
-
     @FXML public ImageView hangman1;
     @FXML public ImageView hangman2;
     @FXML public ImageView hangman3;
+    @FXML public ImageView hangman4;
+    @FXML public ImageView hangman5;
+    @FXML public ImageView hangman6;
+    @FXML public ImageView hangman7;
+    @FXML public ImageView hangman8;
+    @FXML public ImageView hangman9;
     @FXML public ImageView hangman10;
-    @FXML public ImageView hangmanTest;
-
 
     @FXML public Button continueButton;
 
@@ -101,15 +104,34 @@ public class playHangmanController implements Initializable{
                 int errorCount = gameplay.errorCount;
                 switch (gameplay.errorCount) {
                     case 1:
-                        hangmanTest.setVisible(true);
-                        //hangman10.setVisible(true);
-                        //hangman1.setVisible(true);
+                        hangman1.setVisible(true);
                         break;
                     case 2:
                         hangman2.setVisible(true);
                         break;
                     case 3:
                         hangman3.setVisible(true);
+                        break;
+                    case 4:
+                        hangman4.setVisible(true);
+                        break;
+                    case 5:
+                        hangman5.setVisible(true);
+                        break;
+                    case 6:
+                        hangman6.setVisible(true);
+                        break;
+                    case 7:
+                        hangman7.setVisible(true);
+                        break;
+                    case 8:
+                        hangman8.setVisible(true);
+                        break;
+                    case 9:
+                        hangman9.setVisible(true);
+                        break;
+                    case 10:
+                        hangman10.setVisible(true);
                         break;
                 }
                 System.out.println("letter was not in word");

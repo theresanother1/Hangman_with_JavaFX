@@ -23,8 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Anpassung Alignment Text">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign9.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanBild1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanBild2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanBild3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Test.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,20 +113,26 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1mKdshOSElhMKbtoCtV3RIQomMl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_FX" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
@@ -121,9 +142,6 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
       <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Hangman_with_JavaFX [run]">
@@ -143,7 +161,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -162,7 +182,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -181,7 +203,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -283,31 +307,5 @@
     <MESSAGE value="text rechtsbündig" />
     <MESSAGE value="Anpassung Alignment Text" />
     <option name="LAST_COMMIT_MESSAGE" value="Anpassung Alignment Text" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1609412235024">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412235024" />
-    <state width="1476" height="204" key="GridCell.Tab.0.bottom" timestamp="1609412554837">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1476" height="204" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
-    <state width="1476" height="204" key="GridCell.Tab.0.center" timestamp="1609412554837">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1476" height="204" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
-    <state width="1476" height="204" key="GridCell.Tab.0.left" timestamp="1609412554837">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1476" height="204" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
-    <state width="1476" height="204" key="GridCell.Tab.0.right" timestamp="1609412554837">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1476" height="204" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412554837" />
-    <state x="2472" y="272" key="Vcs.Push.Dialog.v2" timestamp="1609412071315">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609412071315" />
   </component>
 </project>
