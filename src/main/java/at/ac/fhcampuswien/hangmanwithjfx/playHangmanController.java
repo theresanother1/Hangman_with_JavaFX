@@ -99,96 +99,86 @@ public class playHangmanController implements Initializable{
     //win or lose fehlt noch - derzeit ins Unendliche spielbar
     protected void pressToCheckLetter(ActionEvent actionEvent) {
         duplicate.setVisible(false);
-       /*try{ checkThisInputLetter.getText();
-       } catch(Exception e){
-           System.out.println("No letter entered"+e);
-
-        */
-
-
-
-
-
-        System.out.println("Checked Letter: " + checkThisInputLetter.getText());
-        if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
-            System.out.println("checked for duplicate");
-            if (gameplay.checkLetter(checkThisInputLetter.getText().charAt(0), thisWord)) {
-                System.out.println("checked if letter in word");
-                currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", "")
-                        .replace("]", "")
-                        //.replace(" ", "")
-                        .replace(",", ""));
-                if ((Arrays.toString(gameplay.lines).replace("[", "")
-                    .replace("]", "")
-                    .replace(" ", "")
-                    .replace(",", "").equals(thisWord))){
-                System.out.println("you win!");
-                uWin.setVisible(true);
-                //startButton.setVisible(true);
-                //exitButton.setVisible(true);
-                quit.setVisible(true);
-                currentWordOutput.setVisible(false);
-                enterLetterHere.setVisible(false);
-                continueButton.setVisible(false);
-                checkThisInputLetter.setVisible(false);
-                hangman0.setVisible(false);
-
-
-
-
-
-            }
-            }
-            else {
-                int errorCount = gameplay.errorCount;
-                switch (gameplay.errorCount) {
-                    case 1:
-                        hangman1.setVisible(true);
-                        break;
-                    case 2:
-                        hangman2.setVisible(true);
-                        break;
-                    case 3:
-                        hangman3.setVisible(true);
-                        break;
-                    case 4:
-                        hangman4.setVisible(true);
-                        break;
-                    case 5:
-                        hangman5.setVisible(true);
-                        break;
-                    case 6:
-                        hangman6.setVisible(true);
-                        break;
-                    case 7:
-                        hangman7.setVisible(true);
-                        break;
-                    case 8:
-                        hangman8.setVisible(true);
-                        break;
-                    case 9:
-                        hangman9.setVisible(true);
-                        break;
-                    case 10:
-                        hangman10.setVisible(true);
-                        // auf you lose gehen
-                        System.out.println("you lost!");
+        if(checkThisInputLetter.getText() == ""){
+            //checkThisInputLetter.getText().concat(" ");
+        }
+        else {
+            System.out.println("Checked Letter: " + checkThisInputLetter.getText());
+            if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
+                System.out.println("checked for duplicate");
+                if (gameplay.checkLetter(checkThisInputLetter.getText().charAt(0), thisWord)) {
+                    System.out.println("checked if letter in word");
+                    currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")
+                            .replace("]", " ")
+                            .replace(",", " "));
+                    if ((Arrays.toString(gameplay.lines).replace("[", "")
+                            .replace("]", "")
+                            .replace(" ", "")
+                            .replace(",", "").equals(thisWord))) {
+                        System.out.println("you win!");
+                        uWin.setVisible(true);
+                        //startButton.setVisible(true);
+                        //exitButton.setVisible(true);
                         quit.setVisible(true);
                         currentWordOutput.setVisible(false);
                         enterLetterHere.setVisible(false);
                         continueButton.setVisible(false);
                         checkThisInputLetter.setVisible(false);
                         hangman0.setVisible(false);
-                        uLost.setVisible(true);
-                        break;
+
+
+                    }
+                } else {
+                    int errorCount = gameplay.errorCount;
+                    switch (gameplay.errorCount) {
+                        case 1:
+                            hangman1.setVisible(true);
+                            break;
+                        case 2:
+                            hangman2.setVisible(true);
+                            break;
+                        case 3:
+                            hangman3.setVisible(true);
+                            break;
+                        case 4:
+                            hangman4.setVisible(true);
+                            break;
+                        case 5:
+                            hangman5.setVisible(true);
+                            break;
+                        case 6:
+                            hangman6.setVisible(true);
+                            break;
+                        case 7:
+                            hangman7.setVisible(true);
+                            break;
+                        case 8:
+                            hangman8.setVisible(true);
+                            break;
+                        case 9:
+                            hangman9.setVisible(true);
+                            break;
+                        case 10:
+                            hangman10.setVisible(true);
+                            // auf you lose gehen
+                            System.out.println("you lost!");
+                            quit.setVisible(true);
+                            currentWordOutput.setVisible(false);
+                            enterLetterHere.setVisible(false);
+                            continueButton.setVisible(false);
+                            checkThisInputLetter.setVisible(false);
+                            hangman0.setVisible(false);
+                            uLost.setVisible(true);
+                            break;
+                    }
+                    System.out.println("letter was not in word");
+                    System.out.println(gameplay.errorCount);
                 }
-                System.out.println("letter was not in word");
-                System.out.println(gameplay.errorCount);
+                checkThisInputLetter.clear();
+            } else {
+                duplicate.setVisible(true);
+                checkThisInputLetter.clear();
             }
-            checkThisInputLetter.clear();
-        } else {
-            duplicate.setVisible(true);
-            checkThisInputLetter.clear();
         }
     }
     @Override

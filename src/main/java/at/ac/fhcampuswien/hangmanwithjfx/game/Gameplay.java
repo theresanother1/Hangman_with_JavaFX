@@ -121,7 +121,7 @@ public class Gameplay {
         char checkLetter = this.letter;
         boolean duplicate = false;
 
-        for (int i = 0; i<allLetters.length; i++){
+        for (int i = 0; i < allLetters.length; i++) {
             if (checkLetter == allLetters[i]) {
                 duplicate = true;
                 System.out.println("This is a duplicate!");
