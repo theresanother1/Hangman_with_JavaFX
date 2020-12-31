@@ -16,13 +16,13 @@
 
       <Button fx:id="startButton" blendMode="SCREEN" layoutX="483.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive">
          <font>
-            <Font name="Copperplate Gothic Bold" size="12.0" />
+            <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
       <Button fx:id="exitButton" blendMode="SCREEN" layoutX="282.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="200.0" text="we all die one day">
          <font>
-            <Font name="Copperplate Gothic Bold" size="12.0" />
+            <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
@@ -39,7 +39,7 @@
          <children>
             <Label fx:id="wordToCheck" prefHeight="42.0" prefWidth="201.0" textFill="#f2eeee" visible="true">
                <font>
-                  <Font name="Copperplate Gothic Bold" size="18.0" />
+                  <Font name="Cambria" size="18.0" />
                </font>
             </Label>
          </children>
@@ -47,13 +47,13 @@
 
       <Button fx:id="continueButton" blendMode="SCREEN" layoutX="447.0" layoutY="468.0" mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="248.0" text="check your letter here" visible="false">
          <font>
-            <Font name="Copperplate Gothic Bold" size="12.0" />
+            <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
       <Label fx:id="currentWordOutput" layoutX="358.0" layoutY="289.0" prefHeight="63.0" prefWidth="446.0" textAlignment="JUSTIFY" textFill="#f9fdfa" visible="false">
          <font>
-            <Font name="Copperplate Gothic Bold" size="36.0" />
+            <Font name="Cambria" size="36.0" />
          </font>
          <effect>
             <Bloom />
@@ -64,7 +64,7 @@
 
       <Label fx:id="enterLetterHere" layoutX="488.0" layoutY="406.0" prefHeight="18.0" prefWidth="187.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
          <font>
-            <Font name="Copperplate Gothic Bold" size="12.0" />
+            <Font name="Cambria" size="12.0" />
          </font>
          <effect>
             <Bloom />
@@ -90,7 +90,7 @@
       </ImageView>
       <Label fx:id="duplicate" blendMode="HARD_LIGHT" layoutX="475.0" layoutY="387.0" prefHeight="18.0" prefWidth="211.0" text="Oooooops, that's a duplicate!" textFill="#d72424" visible="false">
          <font>
-            <Font name="Copperplate Gothic Bold" size="12.0" />
+            <Font name="Cambria" size="12.0" />
          </font>
       </Label>
       <ImageView fx:id="hangman10" fitHeight="243.0" fitWidth="292.0" layoutX="21.0" layoutY="179.0" visible="false">
