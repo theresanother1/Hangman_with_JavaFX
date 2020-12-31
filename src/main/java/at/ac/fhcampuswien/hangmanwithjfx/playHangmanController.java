@@ -99,10 +99,16 @@ public class playHangmanController implements Initializable{
     //win or lose fehlt noch - derzeit ins Unendliche spielbar
     protected void pressToCheckLetter(ActionEvent actionEvent) {
         duplicate.setVisible(false);
-        /*if (checkThisInputLetter.getText() == null){
+       /*try{ checkThisInputLetter.getText();
+       } catch(Exception e){
+           System.out.println("No letter entered"+e);
 
-        }*/
-        //checkThisInputLetter.
+        */
+
+
+
+
+
         System.out.println("Checked Letter: " + checkThisInputLetter.getText());
         if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
             System.out.println("checked for duplicate");
