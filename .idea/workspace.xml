@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="invocation target exception gelöst (leeren string eingeben)">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="win or lose miteingebaut">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
@@ -149,9 +150,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -170,9 +169,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -191,9 +188,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -319,5 +314,31 @@
     <MESSAGE value="uwin, ulost" />
     <MESSAGE value="invocation target exception gelöst (leeren string eingeben)" />
     <option name="LAST_COMMIT_MESSAGE" value="invocation target exception gelöst (leeren string eingeben)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1478" height="202" key="GridCell.Tab.0.bottom" timestamp="1609446695040">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
+    <state width="1478" height="202" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609446695040" />
+    <state width="1478" height="202" key="GridCell.Tab.0.center" timestamp="1609446695040">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
+    <state width="1478" height="202" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1609446695040" />
+    <state width="1478" height="202" key="GridCell.Tab.0.left" timestamp="1609446695040">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
+    <state width="1478" height="202" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1609446695040" />
+    <state width="1478" height="202" key="GridCell.Tab.0.right" timestamp="1609446695040">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
+    <state width="1478" height="202" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1609446695040" />
+    <state x="425" y="199" key="run.anything.popup" timestamp="1609446220662">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1609446220662" />
   </component>
 </project>

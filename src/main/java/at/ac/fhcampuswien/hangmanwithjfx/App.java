@@ -16,14 +16,14 @@ public class App extends Application  {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-            Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
-            primaryStage.setTitle("This is HANGMAN!");
-            //unveränderbare größe des Fensters
-            primaryStage.setScene(new Scene(root, 845, 600));
-            primaryStage.show();
-            primaryStage.setMinHeight(600);
-            primaryStage.setMaxHeight(600);
-            primaryStage.setMinWidth(845);
-            primaryStage.setMaxWidth(845);
-        }
+        //initialisiert 1. Seite
+        Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
+        primaryStage.setTitle("This is HANGMAN!");
+        primaryStage.setScene(new Scene(root, 845, 600));
+
+        //setzt Fenster auf fixe Größe
+        primaryStage.setResizable(false);
+        primaryStage.show();
+
+    }
     }

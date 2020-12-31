@@ -6,49 +6,27 @@ import java.util.Scanner;
 import static java.lang.Character.toLowerCase;
 
 public class Gameplay {
+
     public char letter;
     public final int MAXERRORS = 10;
-    public char[] allLetters;
     public int errorCount;
+    public char[] allLetters;
     public char[] lines;
     boolean restart = true;
     public String wordToFind = " ";
 
-
+    //Konstruktor - setzt alles auf 0 oder benötigte Startwerte
     public Gameplay(){
-        //Konstruktor setzt alles auf 0 / Startwert
-        //System.out.println("Konstruktor Start");
         this.letter = ' ';
         this.allLetters = new char[MAXERRORS];
         Arrays.fill(allLetters, ' ');
-        //System.out.println(Arrays.toString(allLetters) + "Konstruktor");
         this.errorCount = 0;
         this.wordToFind = randomWord();
-        //System.out.println(wordToFind+ " klasse");
-        //printLines(wordToFind);
         printLines();
-        //this.lines = new char[wordToFind.length()];
-        //System.out.println(lines + "klasse");
-        //Arrays.fill(lines, '_');
-        //System.out.println(Arrays.toString(lines) + " klasse"); //checks for lines being set up
-        //System.out.println("Konstruktor Stopp");
     }
 
-   /* public void reset() {
-        //Methode setzt alles auf Anfang zurück; boolean übergeben???
-        letter = ' ';
-        allLetters = new char[MAXERRORS];
-        Arrays.fill(allLetters, ' ');
-        errorCount = 0;
-        wordToFind = randomWord();
-        //printLines(wordToFind);
-        this.lines = new char[wordToFind.length()];
-
-    }
-
-    */
+    //wählt das Wort aus String-Array aus
     public String randomWord() {
-        //wählt ein zufälliges Wort aus Datenbank bzw. ArrayList aus
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
         //https://www.hangmanwords.com/words
         String dictionary[] = {"abstraction", "ambiguous", "arithmetic", "backslash", "bitmap", "circumstance", "combination", "consequently",
@@ -92,8 +70,8 @@ public class Gameplay {
         return wordToFind;
     }
 
+    //Array of characters mit der Länge String Wort, printet __
    public char[] printLines (){
-        //Array of characters mit der Länge String Wort, printet ___
         this.lines = new char[wordToFind.length()];
         for(int i=0; i<wordToFind.length(); i++){
             lines[i] = '_';
@@ -102,7 +80,8 @@ public class Gameplay {
         return lines;
     }
 
-    public void userInput() {
+   /* war für Konsole benötigt
+   public void userInput() {
         //Scanner
         //Eingabeaufforderung
         //Methode soll sich beschränkt oft wiederholen
@@ -111,12 +90,10 @@ public class Gameplay {
         this.letter = toLowerCase(input.next().charAt(0));
         //return inputword;
     }
+    */
 
+    //es wird geprüft, ob Buchstabe schon einmal eingegeben wurde
     public boolean checkForDuplicates(String input) {
-        //user input Buchstabe übernehmen
-        //mit bisher eingegebenen Buchstaben vergleichen
-        //if doppelt true -> userInput
-        //if doppelt false -> checkLetter
         this.letter = toLowerCase(input.charAt(0));
         char checkLetter = this.letter;
         boolean duplicate = false;
@@ -124,7 +101,7 @@ public class Gameplay {
         for (int i = 0; i < allLetters.length; i++) {
             if (checkLetter == allLetters[i]) {
                 duplicate = true;
-                System.out.println("This is a duplicate!");
+                //System.out.println("This is a duplicate!");
                 break;
             }
         }
@@ -132,7 +109,7 @@ public class Gameplay {
             for (int i = 0; i < MAXERRORS; i++) {
                 if (allLetters[i] == ' ') {
                     allLetters[i] = checkLetter;
-                    System.out.println(allLetters);
+                    //System.out.println(allLetters);
                     break;
                 }
             }
@@ -140,14 +117,8 @@ public class Gameplay {
         return duplicate;
     }
 
+    //überprüft, ob der Buchstabe im gesuchten Wort ist
     public boolean checkLetter(char c, String s) {
-        //if letter correct
-        //Linie an der Stelle des Buchstaben wird durch Buchstaben ersetzt
-        //if letter incorrect
-        //error count ++
-        //ev. print && change o to x
-        //Buchstabe muss mit den Buchstaben im Wort verglichen werden
-        //char Array mit randomWort
 
         wordToFind = s;
         char noDuplicate = this.letter;
@@ -159,40 +130,21 @@ public class Gameplay {
                 //System.out.println("if");
                 test = true;
                 lines[i] = noDuplicate;
-                System.out.println(lines);
-                continue;
-                //newasterisk += guess.charAt(0); //wenn richtig dann wird newasterix diese buchstabe bekommen
+                //System.out.println(lines);
+               // continue;
             }
-            /*else if (asterisk.charAt(i) != '_') {
-                newasterisk += wordToFind.charAt(i);
-            }*/
         }
         if (!test){
-            //System.out.println("else");
             errorCount ++;
-            System.out.println(lines);
-            System.out.println("Oops! " + (MAXERRORS-errorCount) +" Lives left");
+            //System.out.println("else");
+            //System.out.println(lines);
+            //System.out.println("Oops! " + (MAXERRORS-errorCount) +" Lives left");
             //newasterisk += "_"; //newasterix generiert
         } return test;
         //System.out.println("end");
-
-        /* win or lose
-        if (asterisk.equals(newasterisk)) { //wenns falsch ist
-            errorCount++;
-            System.out.println(newasterisk);
-            System.out.println("Oops! " + (MAXERRORS-errorCount) +"Lives left");
-        } else { //wenns richtig ist
-            asterisk = newasterisk; //lösung wird mit neuenasterisk ersetzt für den nächsten vergleich
-            System.out.println(newasterisk);
-        }
-        if (asterisk.equals(wordToFind)) { // finito
-            System.out.println("Correct! You win! The word was " + wordToFind);
-        }*/
-
-
-
     }
 
+    /* war für Konsole benötigt
     public boolean winOrLose(String wordToFind) {
         //if word user == word computer && errors != max errors
         //win!1!
@@ -220,17 +172,16 @@ public class Gameplay {
             //userInput();
         }
 
-       */
+
         return restart;
     }
 
-    //Hier eventuell Printmethode einfügen
 
-
-    public boolean restartGame() {
+     public boolean restartGame() {
         //User fragen, ob sie das Spiel beenden oder weitermachen möchten
         //neues Spiel starten bzw. beenden
         return true;
     }
+     */
 }
 
