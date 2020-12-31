@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="hangmantest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.playHangmanController">
+<AnchorPane fx:id="hangmantest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.playHangmanController">
    <children>
 
       <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive" visible="true">
@@ -71,7 +71,7 @@
          </effect>
       </Label>
 
-      <Label fx:id="duplicate" blendMode="HARD_LIGHT" layoutX="475.0" layoutY="387.0" prefHeight="18.0" prefWidth="211.0" text="Oooooops, that's a duplicate!" textFill="#d72424" visible="false">
+      <Label fx:id="duplicate" blendMode="HARD_LIGHT" layoutX="531.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Oooooops, that's a duplicate!" textFill="#56fc2d" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
