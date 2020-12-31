@@ -18,6 +18,7 @@ public class App extends Application  {
     public void start(Stage primaryStage) throws Exception {
             Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
             primaryStage.setTitle("This is HANGMAN!");
+            //unveränderbare größe des Fensters
             primaryStage.setScene(new Scene(root, 845, 600));
             primaryStage.show();
         }

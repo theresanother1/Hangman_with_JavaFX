@@ -28,7 +28,6 @@ public class playHangmanController implements Initializable{
     //set invisible in the beginning
     @FXML public Label wordToCheck;
     @FXML public Label enterLetterHere;
-
     @FXML public Label duplicate;
     @FXML public Label currentWordOutput;
 
@@ -44,7 +43,6 @@ public class playHangmanController implements Initializable{
 
     //set visible - Startlayout
     @FXML public Label messageForUser;
-
     @FXML private Button startButton;
     @FXML private Button exitButton; //to give chance to end game
 
@@ -67,7 +65,6 @@ public class playHangmanController implements Initializable{
         wordToCheck.setText(thisWord);
         currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")
                 .replace("]", " ")
-                //.replace(" ", "")
                 .replace(",", " "));
 
         //Stage newStage = (Stage) startButton.getScene().getWindow();
