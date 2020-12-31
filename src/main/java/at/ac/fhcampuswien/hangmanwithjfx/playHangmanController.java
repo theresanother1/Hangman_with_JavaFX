@@ -25,24 +25,32 @@ import static java.lang.Character.toLowerCase;
 
 public class playHangmanController implements Initializable{
 
+    //set invisible in the beginning
     @FXML public Label wordToCheck;
     @FXML public Label enterLetterHere;
-    @FXML public Label messageForUser;
+
+    @FXML public Label duplicate;
+    @FXML public Label currentWordOutput;
+
     @FXML public ImageView hangman1;
     @FXML public ImageView hangman2;
     @FXML public ImageView hangman3;
-    @FXML public Label duplicate;
-    @FXML private Button startButton;
-  //  @FXML AnchorPane anchorpane;
-    @FXML private Button exitButton; //to give chance to end game
-    //from gamepagecontroller
+    @FXML public ImageView hangman10;
+    @FXML public ImageView hangmanTest;
+
     @FXML public Button continueButton;
-    @FXML public Label currentWordOutput;
+
     @FXML public TextField checkThisInputLetter;
-    //@FXML public TextArea status;
+
+    //set visible - Startlayout
+    @FXML public Label messageForUser;
+
+    @FXML private Button startButton;
+    @FXML private Button exitButton; //to give chance to end game
+
+    //for accessing Game Logic
     protected Gameplay gameplay = new Gameplay();
     public String thisWord = gameplay.wordToFind;
-   // public static char[] lines;
 
     @FXML //lets user exit the game upfront
     protected void exitGame(ActionEvent a){
@@ -50,28 +58,24 @@ public class playHangmanController implements Initializable{
         primaryStage.close();
     }
 
-    @FXML
+    @FXML //launches the game
     protected void pressToPlay(ActionEvent actionEvent) throws Exception{
-        //gameplay = new Gameplay();
-       // thisWord = gameplay.randomWord(); //get the random word for the game from gameplay
-        //this.thisWord = gameplay.wordToFind;
-        //lines = gameplay.printLines(thisWord);
 
         System.out.println(thisWord); //prints the random word to console
         System.out.println(Arrays.toString(gameplay.lines) + " pressToPlay"); //print out lines array for word
 
         wordToCheck.setText(thisWord);
-        currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", "")
-                .replace("]", "")
+        currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")
+                .replace("]", " ")
                 //.replace(" ", "")
-                .replace(",", ""));
+                .replace(",", " "));
 
-        Stage newStage = (Stage) startButton.getScene().getWindow();
+        //Stage newStage = (Stage) startButton.getScene().getWindow();
         startButton.setVisible(false);
         exitButton.setVisible(false);
         messageForUser.setVisible(false);
 
-        wordToCheck.setVisible(true);
+       // wordToCheck.setVisible(true);
         enterLetterHere.setVisible(true);
         currentWordOutput.setVisible(true);
         continueButton.setVisible(true);
@@ -79,7 +83,8 @@ public class playHangmanController implements Initializable{
     }
 
 
-    @FXML
+    @FXML //continues the game, checks letter
+    //win or lose fehlt noch - derzeit ins Unendliche spielbar
     protected void pressToCheckLetter(ActionEvent actionEvent) {
         duplicate.setVisible(false);
         System.out.println("Checked Letter: " + checkThisInputLetter.getText());
@@ -95,7 +100,9 @@ public class playHangmanController implements Initializable{
                 int errorCount = gameplay.errorCount;
                 switch (gameplay.errorCount) {
                     case 1:
-                        hangman1.setVisible(true);
+                        hangmanTest.setVisible(true);
+                        //hangman10.setVisible(true);
+                        //hangman1.setVisible(true);
                         break;
                     case 2:
                         hangman2.setVisible(true);

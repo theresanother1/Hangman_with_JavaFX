@@ -22,13 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Startseite geändert, Buttons hinzugefügt, fxml files geändert">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanBild2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanBild3.jpg" afterDir="false" />
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="spiellogik in die GUI miteingebaut">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HangmanDesign11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Test.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanBild1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanBild1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609340777663</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spiellogik in die GUI miteingebaut">
+      <created>1609345117499</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609345117499</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +258,8 @@
     <MESSAGE value="noch sehr buggy und wirft auch noch error, weil ich die verknüpfung mit dem array noch nicht ganz habe, aber es passiert was. :)" />
     <MESSAGE value="gitignore aktualisiert" />
     <MESSAGE value="Startseite geändert, Buttons hinzugefügt, fxml files geändert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startseite geändert, Buttons hinzugefügt, fxml files geändert" />
+    <MESSAGE value="spiellogik in die GUI miteingebaut" />
+    <option name="LAST_COMMIT_MESSAGE" value="spiellogik in die GUI miteingebaut" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1920" y="84" key="#Project_Structure" timestamp="1609251730480">
@@ -264,10 +270,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2334" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609247851412" />
-    <state x="2641" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609254673126">
+    <state x="2641" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609354570366">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2641" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609254673126" />
+    <state x="2641" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609354570366" />
     <state x="2685" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1609321856588">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -304,28 +310,32 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2556" y="237" key="Github.UntrackedFilesDialog/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609261620912" />
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom" timestamp="1609344991566">
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1609404320142">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609344991566" />
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1609353259447" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609404320142" />
     <state width="1493" height="202" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1536.864@0.0.1536.864" timestamp="1609275706158" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1536.864@1920.0.1920.1080" timestamp="1609280509360" />
-    <state width="1877" height="202" key="GridCell.Tab.0.center" timestamp="1609344991566">
+    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1609404320142">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609344991566" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1609353259432" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609404320142" />
     <state width="1493" height="202" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1536.864@0.0.1536.864" timestamp="1609275706157" />
     <state width="1877" height="363" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1536.864@1920.0.1920.1080" timestamp="1609280509360" />
-    <state width="1877" height="202" key="GridCell.Tab.0.left" timestamp="1609344991566">
+    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1609404320142">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609344991566" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1609353259432" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609404320142" />
     <state width="1493" height="202" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1536.864@0.0.1536.864" timestamp="1609275706157" />
     <state width="1877" height="363" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1536.864@1920.0.1920.1080" timestamp="1609280509360" />
-    <state width="1877" height="202" key="GridCell.Tab.0.right" timestamp="1609344991566">
+    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1609404320142">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609344991566" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1609353259432" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609404320142" />
     <state width="1493" height="202" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1536.864@0.0.1536.864" timestamp="1609275706157" />
     <state width="1877" height="363" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1536.864@1920.0.1920.1080" timestamp="1609280509360" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1609325005690">
@@ -352,10 +362,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2321" y="41" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609248683580" />
-    <state x="2371" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609340781374">
+    <state x="2371" y="206" key="Vcs.Push.Dialog.v2" timestamp="1609345119925">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2371" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609340781374" />
+    <state x="2371" y="206" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609345119925" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1536.864@0.0.1536.864" timestamp="1609272484837" />
     <state x="2371" y="206" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1536.864@1920.0.1920.1080" timestamp="1609280498424" />
     <state x="2451" y="246" key="run.anything.popup" timestamp="1609321250086">
