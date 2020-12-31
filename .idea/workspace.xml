@@ -22,10 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Startseite geändert, Buttons hinzugefügt, fxml files geändert">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ulost.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ulost2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/uwin.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,11 +118,8 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\conta\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\.idea" />
@@ -129,6 +128,10 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
       <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Hangman_with_JavaFX [run]">
@@ -148,9 +151,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -169,9 +170,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -190,9 +189,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -268,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609412069516</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="woerter aktualisiert, duplicate bearbeitet">
+      <created>1609417357709</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609417357709</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,29 +297,34 @@
     <MESSAGE value="Cambria" />
     <MESSAGE value="text rechtsbündig" />
     <MESSAGE value="Anpassung Alignment Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anpassung Alignment Text" />
+    <MESSAGE value="woerter aktualisiert, duplicate bearbeitet" />
+    <option name="LAST_COMMIT_MESSAGE" value="woerter aktualisiert, duplicate bearbeitet" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom" timestamp="1609416977978">
+    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1609417356465">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609416977978" />
-    <state width="1236" height="2" key="GridCell.Tab.0.center" timestamp="1609416977978">
+    <state x="213" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1609417356465" />
+    <state width="1236" height="2" key="GridCell.Tab.0.bottom" timestamp="1609423117624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609416977978" />
-    <state width="1236" height="2" key="GridCell.Tab.0.left" timestamp="1609416977978">
+    <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1609423117624" />
+    <state width="1236" height="2" key="GridCell.Tab.0.center" timestamp="1609423117624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609416977978" />
-    <state width="1236" height="2" key="GridCell.Tab.0.right" timestamp="1609416977978">
+    <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1609423117624" />
+    <state width="1236" height="2" key="GridCell.Tab.0.left" timestamp="1609423117624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609416977978" />
-    <state x="236" y="75" key="Vcs.Push.Dialog.v2" timestamp="1609417034137">
+    <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1609423117624" />
+    <state width="1236" height="2" key="GridCell.Tab.0.right" timestamp="1609423117624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="236" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1609417034137" />
+    <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1609423117624" />
+    <state x="236" y="75" key="Vcs.Push.Dialog.v2" timestamp="1609417361353">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="236" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1609417361353" />
     <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609416456579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

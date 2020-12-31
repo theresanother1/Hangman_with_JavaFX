@@ -42,6 +42,8 @@ public class playHangmanController implements Initializable{
     @FXML public ImageView hangman8;
     @FXML public ImageView hangman9;
     @FXML public ImageView hangman10;
+    @FXML public ImageView uWin;
+    @FXML public ImageView uLost;
 
     @FXML public Button continueButton;
 
@@ -51,6 +53,7 @@ public class playHangmanController implements Initializable{
     @FXML public Label messageForUser;
     @FXML private Button startButton;
     @FXML private Button exitButton; //to give chance to end game
+    @FXML public Button quit;
 
     //for accessing Game Logic
     protected Gameplay gameplay = new Gameplay();
@@ -59,6 +62,12 @@ public class playHangmanController implements Initializable{
     @FXML //lets user exit the game upfront
     protected void exitGame(ActionEvent a){
         Stage primaryStage = (Stage) exitButton.getScene().getWindow();
+        primaryStage.close();
+    }
+
+    @FXML //lets user exit the game upfront
+    protected void quitGame(ActionEvent a){
+        Stage primaryStage = (Stage) quit.getScene().getWindow();
         primaryStage.close();
     }
 
@@ -107,8 +116,21 @@ public class playHangmanController implements Initializable{
                     .replace("]", "")
                     .replace(" ", "")
                     .replace(",", "").equals(thisWord))){
-                System.out.println("you win");
-                    System.out.println("blubb");
+                System.out.println("you win!");
+                uWin.setVisible(true);
+                //startButton.setVisible(true);
+                //exitButton.setVisible(true);
+                quit.setVisible(true);
+                currentWordOutput.setVisible(false);
+                enterLetterHere.setVisible(false);
+                continueButton.setVisible(false);
+                checkThisInputLetter.setVisible(false);
+                hangman0.setVisible(false);
+
+
+
+
+
             }
             }
             else {
@@ -144,7 +166,14 @@ public class playHangmanController implements Initializable{
                     case 10:
                         hangman10.setVisible(true);
                         // auf you lose gehen
-                        System.out.println("you lost");
+                        System.out.println("you lost!");
+                        quit.setVisible(true);
+                        currentWordOutput.setVisible(false);
+                        enterLetterHere.setVisible(false);
+                        continueButton.setVisible(false);
+                        checkThisInputLetter.setVisible(false);
+                        hangman0.setVisible(false);
+                        uLost.setVisible(true);
                         break;
                 }
                 System.out.println("letter was not in word");
