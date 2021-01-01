@@ -102,6 +102,8 @@ public class playHangmanController implements Initializable{
                 .replace("]", " ")
                 .replace(",", " "));
 
+        //Label currentWordOutput mittiger setzen - Test
+
         //setzt alles für Spielanfang nicht notwendig invisible
         startButton.setVisible(false);
         exitButton.setVisible(false);

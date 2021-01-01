@@ -14,19 +14,19 @@
 <AnchorPane fx:id="hangmantest" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@startseite.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.playHangmanController">
    <children>
 
-      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive" visible="true">
+      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <Button fx:id="exitButton" blendMode="SCREEN" layoutX="282.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="200.0" text="we all die one day" visible="true">
+      <Button fx:id="exitButton" blendMode="SCREEN" layoutX="290.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="192.0" text="we all die one day" visible="true">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <Label fx:id="messageForUser" layoutX="359.0" layoutY="310.0" prefHeight="142.0" prefWidth="248.0" text="So you come here and expect &#10;to survive? the one who comes &#10;here, will rot forever!! &#10;Though, I am willing to give you&#10;a chance to live: &#10;Let's play a little game... " textAlignment="CENTER" textFill="#f9fdfa" textOverrun="CENTER_WORD_ELLIPSIS" visible="true" wrapText="true">
+      <Label fx:id="messageForUser" alignment="BOTTOM_CENTER" layoutX="358.0" layoutY="289.0" prefHeight="142.0" prefWidth="248.0" text="So you come here and expect &#10;to survive? the one who comes &#10;here, will rot forever!! &#10;Though, I am willing to give you&#10;a chance to live: &#10;Let's play a little game... " textAlignment="CENTER" textFill="#f9fdfa" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
@@ -51,7 +51,7 @@
          </font>
       </Button>
 
-      <Label fx:id="currentWordOutput" layoutX="455.0" layoutY="295.0" prefHeight="49.0" prefWidth="371.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
+      <Label fx:id="currentWordOutput" alignment="BOTTOM_CENTER" layoutX="390.0" layoutY="310.0" prefHeight="50.0" prefWidth="416.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="40.0" />
          </font>
@@ -62,7 +62,7 @@
 
       <TextField fx:id="checkThisInputLetter" layoutX="577.0" layoutY="413.0" prefHeight="26.0" prefWidth="46.0" visible="false" />
 
-      <Label fx:id="enterLetterHere" layoutX="540.0" layoutY="387.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
+      <Label fx:id="enterLetterHere" layoutX="540.0" layoutY="381.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
