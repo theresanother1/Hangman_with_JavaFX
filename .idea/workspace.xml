@@ -22,11 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="kleine kosmetische Änderungen">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/startseite.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/startseite.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,13 +113,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\conta\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -130,6 +126,10 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
       <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Hangman_with_JavaFX [run]">
@@ -277,28 +277,7 @@
       <option name="project" value="LOCAL" />
       <updated>1609423470948</updated>
     </task>
-    <task id="LOCAL-00011" summary="invocation target exception gelöst (leeren string eingeben)">
-      <created>1609426365735</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1609426365735</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Button für Restart erstellt&#10;Errormeldung falls kein Buchstabe eingegeben wird erstellt&#10;&quot;restartable&quot;-Möglichkeit erstellt &#10;Leserlichkeit des Codes verbessert">
-      <created>1609446851577</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1609446851577</updated>
-    </task>
-    <task id="LOCAL-00013" summary="kleine kosmetische Änderungen">
-      <created>1609508158427</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1609508158427</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,47 +304,28 @@
     <MESSAGE value="Anpassung Alignment Text" />
     <MESSAGE value="woerter aktualisiert, duplicate bearbeitet" />
     <MESSAGE value="uwin, ulost" />
-    <MESSAGE value="invocation target exception gelöst (leeren string eingeben)" />
-    <MESSAGE value="Button für Restart erstellt&#10;Errormeldung falls kein Buchstabe eingegeben wird erstellt&#10;&quot;restartable&quot;-Möglichkeit erstellt &#10;Leserlichkeit des Codes verbessert" />
-    <MESSAGE value="kleine kosmetische Änderungen" />
-    <option name="LAST_COMMIT_MESSAGE" value="kleine kosmetische Änderungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="uwin, ulost" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="788" height="202" key="GridCell.Tab.0.bottom" timestamp="1609509479743">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1236" height="2" key="GridCell.Tab.0.bottom" timestamp="1610625424614">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
-    <state width="788" height="202" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609509479743" />
-    <state width="788" height="202" key="GridCell.Tab.0.center" timestamp="1609509479743">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
+    <state width="1236" height="2" key="GridCell.Tab.0.center" timestamp="1610625424614">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
-    <state width="788" height="202" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1609509479743" />
-    <state width="788" height="202" key="GridCell.Tab.0.left" timestamp="1609509479739">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
+    <state width="1236" height="2" key="GridCell.Tab.0.left" timestamp="1610625424614">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
-    <state width="788" height="202" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1609509479739" />
-    <state width="788" height="202" key="GridCell.Tab.0.right" timestamp="1609509479743">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
+    <state width="1236" height="2" key="GridCell.Tab.0.right" timestamp="1610625424614">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609428143543" />
-    <state width="788" height="202" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1609509479743" />
-    <state x="277" y="77" key="SettingsEditor" timestamp="1609506589918">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
+    <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610623966541">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1609506589918" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609508160536">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1609508160536" />
-    <state x="586" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609507251036">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="586" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1609507251036" />
-    <state x="425" y="199" key="run.anything.popup" timestamp="1609446220662">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="425" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1609446220662" />
+    <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1610623966541" />
   </component>
 </project>

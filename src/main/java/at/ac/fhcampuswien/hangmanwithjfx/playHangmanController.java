@@ -69,6 +69,8 @@ public class playHangmanController implements Initializable{
     protected void setNewGame(){
         this.gameplay = new Gameplay();
         this.thisWord = gameplay.wordToFind;
+
+
     }
 
 
@@ -124,7 +126,7 @@ public class playHangmanController implements Initializable{
         restartButton.setVisible(false);
 
         //für Spiel selbst auf invisible setzen, nur für Testzwecke!!
-        wordToCheck.setVisible(true);
+        wordToCheck.setVisible(false);
 
         //setzt alles für Anfang gebrauchte auf visible
         enterLetterHere.setVisible(true);
@@ -175,6 +177,7 @@ public class playHangmanController implements Initializable{
                              uWin.setVisible(true);
                              quit.setVisible(true);
                              restartButton.setVisible(true);
+                             wordToCheck.setVisible(true);
 
                              //setzt alles, was nicht mehr gesehen werden soll, auf invisible
                              currentWordOutput.setVisible(false);
@@ -222,6 +225,7 @@ public class playHangmanController implements Initializable{
                             quit.setVisible(true);
                             restartButton.setVisible(true);
                             uLost.setVisible(true);
+                            wordToCheck.setVisible(true);
 
                             //nicht benötigtes auf invisible setzen
                             currentWordOutput.setVisible(false);
