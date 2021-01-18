@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/playHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ulost.gif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise-7-theresanother1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -307,25 +309,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="uwin, ulost" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom" timestamp="1610625424614">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1610958512094">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610958512094" />
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1610964997725">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1236" height="2" key="GridCell.Tab.0.center" timestamp="1610625424614">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610964997725" />
+    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1610964997724">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1236" height="2" key="GridCell.Tab.0.left" timestamp="1610625424614">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
+    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610964997724" />
+    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1610964997724">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1236" height="2" key="GridCell.Tab.0.right" timestamp="1610625424614">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
+    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610964997724" />
+    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1610964997725">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610623966541">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
+    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610964997725" />
+    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610626290035">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1610623966541" />
+    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626290035" />
   </component>
 </project>

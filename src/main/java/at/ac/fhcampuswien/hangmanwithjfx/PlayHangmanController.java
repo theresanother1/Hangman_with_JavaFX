@@ -23,7 +23,7 @@ import java.util.ResourceBundle;
 
 import static java.lang.Character.toLowerCase;
 
-public class playHangmanController implements Initializable{
+public class PlayHangmanController implements Initializable{
 
     //set invisible - Startlayout
     @FXML public Label wordToCheck;
@@ -104,12 +104,12 @@ public class playHangmanController implements Initializable{
                 .replace("]", " ")
                 .replace(",", " "));
 
-        //Label currentWordOutput mittiger setzen - Test
-
         //setzt alles für Spielanfang nicht notwendig invisible
         startButton.setVisible(false);
         exitButton.setVisible(false);
         messageForUser.setVisible(false);
+
+        //Bilder/Buttons/Gifs für eventuellen Restart auf invisible setzen
         hangman1.setVisible(false);
         hangman2.setVisible(false);
         hangman3.setVisible(false);
@@ -144,7 +144,7 @@ public class playHangmanController implements Initializable{
         errorNoLetter.setVisible(false);
 
         //wenn nichts eingegeben wird
-        if(checkThisInputLetter.getText() == ""){
+        if(checkThisInputLetter.getText().isEmpty() || checkThisInputLetter.getText() == null) {
             //checkThisInputLetter.getText().concat(" ");
             errorNoLetter.setVisible(true);
         }
