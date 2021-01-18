@@ -69,12 +69,7 @@ public class PlayHangmanController implements Initializable{
     protected void setNewGame(){
         this.gameplay = new Gameplay();
         this.thisWord = gameplay.wordToFind;
-
-
     }
-
-
-
 
     @FXML //Beendet das Spiel gleich am Anfang, wenn man möchte
     protected void exitGame(ActionEvent a){
@@ -90,8 +85,6 @@ public class PlayHangmanController implements Initializable{
 
     @FXML //startet das Spiel
     protected void pressToPlay(ActionEvent actionEvent) throws Exception{
-        //System.out.println(thisWord); //prints the random word to console
-        //System.out.println(Arrays.toString(gameplay.lines) + " pressToPlay"); //print out lines array for word
 
         //initialisiert ein Objekt der Klasse Gameplay
         setNewGame();
@@ -104,7 +97,70 @@ public class PlayHangmanController implements Initializable{
                 .replace("]", " ")
                 .replace(",", " "));
 
-        //setzt alles für Spielanfang nicht notwendig invisible
+        //setzt die Sichtbarkeit für die einzelnen GUI Komponenten
+        visibility();
+
+    }
+
+
+    @FXML //Spiel wird gespielt, Buchstabe überprüft
+    protected void pressToCheckLetter(ActionEvent actionEvent) {
+
+        //Errormeldungen in jedem Durchlauf auf invisible setzen
+        duplicate.setVisible(false);
+        errorNoLetter.setVisible(false);
+
+        //wenn nichts eingegeben wird
+        if(checkThisInputLetter.getText().isEmpty() || checkThisInputLetter.getText() == null) {
+
+           //gibt Errormeldung für Spieler/in aus
+            errorNoLetter.setVisible(true);
+        }
+
+        //ansonsten kann Buchstabenüberprüfung losgehen
+        else {
+
+            //zunächst überprüfen, ob eingegebener Buchstabe ein Duplikat ist
+            if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
+
+                //nun schauen, ob der Buchstabe im Wort ist
+                if (gameplay.checkLetter(checkThisInputLetter.getText().charAt(0), thisWord)) {
+
+                    //Setzt Aktionen, die notwendig sind, wenn das Spiel gewonnen wurde.
+                    youWonTheGame();
+                }
+
+                //je nach Anzahl der Errors wird ein neues Hangmanbild auf visible gesetzt
+                else {
+
+                    //verloren!
+                    switch (gameplay.errorCount) {
+                        case 1 -> hangman1.setVisible(true);
+                        case 2 -> hangman2.setVisible(true);
+                        case 3 -> hangman3.setVisible(true);
+                        case 4 -> hangman4.setVisible(true);
+                        case 5 -> hangman5.setVisible(true);
+                        case 6 -> hangman6.setVisible(true);
+                        case 7 -> hangman7.setVisible(true);
+                        case 8 -> hangman8.setVisible(true);
+                        case 9 -> hangman9.setVisible(true);
+                        case 10 -> youLostTheGame();
+                    }
+                }
+                //löscht den letzten Buchstaben aus dem Textfeld für neuen Input
+                checkThisInputLetter.clear();
+            }
+            //Buchstabe war ein Duplikat, Buchstabenüberprüfung wird nicht durchgeführt, Errormeldung ausgeben
+            else {
+                duplicate.setVisible(true);
+                checkThisInputLetter.clear();
+            }
+        }
+    }
+
+    public void visibility(){
+
+        //Setzt alles für Spielanfang nicht Notwendige invisible
         startButton.setVisible(false);
         exitButton.setVisible(false);
         messageForUser.setVisible(false);
@@ -125,8 +181,8 @@ public class PlayHangmanController implements Initializable{
         quit.setVisible(false);
         restartButton.setVisible(false);
 
-        //für Spiel selbst auf invisible setzen, nur für Testzwecke!!
-        wordToCheck.setVisible(false);
+        //für Wortanzeige am Schluss
+        wordToCheck.setVisible(true);
 
         //setzt alles für Anfang gebrauchte auf visible
         enterLetterHere.setVisible(true);
@@ -134,121 +190,54 @@ public class PlayHangmanController implements Initializable{
         continueButton.setVisible(true);
         checkThisInputLetter.setVisible(true);
         hangman0.setVisible(true);
+
     }
 
+    public void youWonTheGame() {
 
-    @FXML //Spiel wird gespielt, Buchstabe überprüft
-    protected void pressToCheckLetter(ActionEvent actionEvent) {
-        //Errormeldungen auf invisible setzen
-        duplicate.setVisible(false);
-        errorNoLetter.setVisible(false);
+        //gibt aktuelles Wort in GUI aus mit Unterstrichen für fehlende Buchstaben
+        currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")
+                .replace("]", " ")
+                .replace(",", " "));
 
-        //wenn nichts eingegeben wird
-        if(checkThisInputLetter.getText().isEmpty() || checkThisInputLetter.getText() == null) {
-            //checkThisInputLetter.getText().concat(" ");
-            errorNoLetter.setVisible(true);
-        }
+        //überprüft, ob das Wort aus lines == thisWord
+        if ((Arrays.toString(gameplay.lines).replace("[", "")
+                .replace("]", "")
+                .replace(" ", "")
+                .replace(",", "").equals(thisWord))) {
+            //System.out.println("you win!");
 
-        //ansonsten kann Buchstabenüberprüfung losgehen
-        else {
-            //System.out.println("Checked Letter: " + checkThisInputLetter.getText());
+            //aktiviert uWin Bild und Buttons für quitGame & restart
+            uWin.setVisible(true);
+            quit.setVisible(true);
+            restartButton.setVisible(true);
+            wordToCheck.setVisible(true);
 
-            //zunächst überprüfen, ob eingegebener Buchstabe ein Duplikat ist
-            if (!gameplay.checkForDuplicates(checkThisInputLetter.getText())) {
-                //System.out.println("checked for duplicate");
-
-                //nun schauen, ob der Buchstabe im Wort ist
-                if (gameplay.checkLetter(checkThisInputLetter.getText().charAt(0), thisWord)) {
-                    //System.out.println("checked if letter in word");
-
-                    //gibt aktuelles Wort in GUI aus mit Unterstrichen für fehlende Buchstaben
-                    currentWordOutput.setText(Arrays.toString(gameplay.lines).replace("[", " ")
-                            .replace("]", " ")
-                            .replace(",", " "));
-
-                         //überprüft, ob das Wort aus lines == thisWord
-                          if ((Arrays.toString(gameplay.lines).replace("[", "")
-                            .replace("]", "")
-                            .replace(" ", "")
-                            .replace(",", "").equals(thisWord))) {
-                             //System.out.println("you win!");
-
-                             //aktiviert uWin Bild und Buttons für quitGame & restart
-                             uWin.setVisible(true);
-                             quit.setVisible(true);
-                             restartButton.setVisible(true);
-                             wordToCheck.setVisible(true);
-
-                             //setzt alles, was nicht mehr gesehen werden soll, auf invisible
-                             currentWordOutput.setVisible(false);
-                             enterLetterHere.setVisible(false);
-                             continueButton.setVisible(false);
-                             checkThisInputLetter.setVisible(false);
-                    }
-                }
-
-                //je nach Anzahl der Errors wird ein neues Hangmanbild auf visible gesetzt
-                else {
-                    switch (gameplay.errorCount) {
-                        case 1:
-                            hangman1.setVisible(true);
-                            break;
-                        case 2:
-                            hangman2.setVisible(true);
-                            break;
-                        case 3:
-                            hangman3.setVisible(true);
-                            break;
-                        case 4:
-                            hangman4.setVisible(true);
-                            break;
-                        case 5:
-                            hangman5.setVisible(true);
-                            break;
-                        case 6:
-                            hangman6.setVisible(true);
-                            break;
-                        case 7:
-                            hangman7.setVisible(true);
-                            break;
-                        case 8:
-                            hangman8.setVisible(true);
-                            break;
-                        case 9:
-                            hangman9.setVisible(true);
-                            break;
-
-                        //verloren!
-                        case 10:
-                            //alles benötigte auf visible setzen
-                            hangman10.setVisible(true);
-                            quit.setVisible(true);
-                            restartButton.setVisible(true);
-                            uLost.setVisible(true);
-                            wordToCheck.setVisible(true);
-
-                            //nicht benötigtes auf invisible setzen
-                            currentWordOutput.setVisible(false);
-                            enterLetterHere.setVisible(false);
-                            continueButton.setVisible(false);
-                            checkThisInputLetter.setVisible(false);
-                            //System.out.println("you lost!");
-                            break;
-                    }
-                   // System.out.println("letter was not in word");
-                   // System.out.println(gameplay.errorCount);
-                }
-                //löscht den letzten Buchstaben aus dem Textfeld für neuen Input
-                checkThisInputLetter.clear();
-            }
-            //Buchstabe war ein Duplikat, Buchstabenüberprüfung wird nicht durchgeführt, Errormeldung ausgeben
-            else {
-                duplicate.setVisible(true);
-                checkThisInputLetter.clear();
-            }
+            //setzt alles, was nicht mehr gesehen werden soll, auf invisible
+            currentWordOutput.setVisible(false);
+            enterLetterHere.setVisible(false);
+            continueButton.setVisible(false);
+            checkThisInputLetter.setVisible(false);
         }
     }
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+
+    public void youLostTheGame(){
+
+        //alles benötigte auf visible setzen
+        hangman10.setVisible(true);
+        quit.setVisible(true);
+        restartButton.setVisible(true);
+        uLost.setVisible(true);
+        wordToCheck.setVisible(true);
+
+        //nicht benötigtes auf invisible setzen
+        currentWordOutput.setVisible(false);
+        enterLetterHere.setVisible(false);
+        continueButton.setVisible(false);
+        checkThisInputLetter.setVisible(false);
     }
-}
+
+        @Override
+        public void initialize (URL location, ResourceBundle resources){
+        }
+    }
