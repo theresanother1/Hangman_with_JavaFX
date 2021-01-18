@@ -26,65 +26,40 @@ import static java.lang.Character.toLowerCase;
 public class PlayHangmanController implements Initializable {
 
     //set invisible - Startlayout
-    @FXML
-    public Label wordToCheck;
-    @FXML
-    public Label enterLetterHere;
-    @FXML
-    public Label duplicate;
-    @FXML
-    public Label currentWordOutput;
-    @FXML
-    public Label errorNoLetter;
-    //set visible - Startlayout
-    @FXML
-    public Label messageForUser;
-
-    //set invisible - Startlayout
-    @FXML
-    public ImageView hangman0;
-    @FXML
-    public ImageView hangman1;
-    @FXML
-    public ImageView hangman2;
-    @FXML
-    public ImageView hangman3;
-    @FXML
-    public ImageView hangman4;
-    @FXML
-    public ImageView hangman5;
-    @FXML
-    public ImageView hangman6;
-    @FXML
-    public ImageView hangman7;
-    @FXML
-    public ImageView hangman8;
-    @FXML
-    public ImageView hangman9;
-    @FXML
-    public ImageView hangman10;
-    @FXML
-    public ImageView uWin;
-    @FXML
-    public ImageView uLost;
-
-    //set invisible - Startlayout
-    @FXML
-    public TextField checkThisInputLetter;
-
+    @FXML public Label wordToCheck;
+    @FXML public Label enterLetterHere;
+    @FXML public Label duplicate;
+    @FXML public Label currentWordOutput;
+    @FXML public Label errorNoLetter;
 
     //set visible - Startlayout
-    @FXML
-    private Button startButton;
-    @FXML
-    private Button exitButton; //to give chance to end game
+    @FXML public Label messageForUser;
+
     //set invisible - Startlayout
-    @FXML
-    public Button continueButton;
-    @FXML
-    public Button quit;
-    @FXML
-    public Button restartButton;
+    @FXML public ImageView hangman0;
+    @FXML public ImageView hangman1;
+    @FXML public ImageView hangman2;
+    @FXML public ImageView hangman3;
+    @FXML public ImageView hangman4;
+    @FXML public ImageView hangman5;
+    @FXML public ImageView hangman6;
+    @FXML public ImageView hangman7;
+    @FXML public ImageView hangman8;
+    @FXML public ImageView hangman9;
+    @FXML public ImageView hangman10;
+    @FXML public ImageView uWin;
+    @FXML public ImageView uLost;
+
+    //set invisible - Startlayout
+    @FXML public TextField checkThisInputLetter;
+
+    //set visible - Startlayout
+    @FXML private Button startButton;
+    @FXML private Button exitButton; //to give chance to end game
+    //set invisible - Startlayout
+    @FXML public Button continueButton;
+    @FXML public Button quit;
+    @FXML public Button restartButton;
 
     //für Spiellogik
     protected Gameplay gameplay;
@@ -96,19 +71,19 @@ public class PlayHangmanController implements Initializable {
         this.thisWord = gameplay.wordToFind;
     }
 
-    @FXML //Beendet das Spiel gleich am Anfang, wenn man möchte
+    @FXML //Beendet das Spiel gleich am Anfang, wenn man möchte.
     protected void exitGame(ActionEvent a) {
         Stage primaryStage = (Stage) exitButton.getScene().getWindow();
         primaryStage.close();
     }
 
-    @FXML //Beendet das Spiel nach Durchlauf
+    @FXML //Beendet das Spiel nach Durchlauf.
     protected void quitGame(ActionEvent a) {
         Stage primaryStage = (Stage) quit.getScene().getWindow();
         primaryStage.close();
     }
 
-    @FXML //Startet das Spiel
+    @FXML //Startet das Spiel.
     protected void pressToPlay(ActionEvent actionEvent) throws Exception {
 
         //Initialisiert ein Objekt der Klasse Gameplay.
@@ -124,7 +99,6 @@ public class PlayHangmanController implements Initializable {
 
         //Setzt die Sichtbarkeit für die einzelnen GUI Komponenten.
         visibility();
-
     }
 
 
@@ -190,6 +164,7 @@ public class PlayHangmanController implements Initializable {
         }
     }
 
+    //Setzt die jeweiligen Komponenten auf Visible & Invisible.
     public void visibility() {
 
         //Setzt alles für Spielanfang nicht Notwendige invisible
@@ -223,6 +198,7 @@ public class PlayHangmanController implements Initializable {
 
     }
 
+    //Checkt, ob man gewonnen hat, setzt Aktionen, falls ja.
     public void youWonTheGame() {
 
         //Überprüft, ob das Wort aus lines == thisWord.
@@ -245,6 +221,7 @@ public class PlayHangmanController implements Initializable {
         }
     }
 
+    //Setzt jeweilige Komponenten visible/invisible.
     public void youLostTheGame() {
 
         //Alles Benötigte auf visible setzen.
