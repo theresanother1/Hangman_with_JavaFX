@@ -15,13 +15,13 @@
          <!-- Startseite -->
 
       <!-- Startet das Spiel: -->
-      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="take chance to survive">
+      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="Take chance to survive.">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
       <!-- Beendet das Spiel: -->
-      <Button fx:id="exitButton" blendMode="SCREEN" layoutX="290.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="192.0" text="we all die one day" visible="true">
+      <Button fx:id="exitButton" blendMode="SCREEN" layoutX="290.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="192.0" text="We all die one day." visible="true">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -40,7 +40,7 @@
       <!-- Spielseite:  -->
 
       <!-- Mit Click wird der eingegebene Buchstabe überprüft -> Continue Game -->
-      <Button fx:id="continueButton" blendMode="SCREEN" layoutX="476.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="248.0" text="check your letter here" visible="false">
+      <Button fx:id="continueButton" blendMode="SCREEN" layoutX="483.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="230.0" text="Check your Letter here." visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -60,7 +60,7 @@
       <TextField fx:id="checkThisInputLetter" layoutX="577.0" layoutY="413.0" prefHeight="26.0" prefWidth="46.0" visible="false" />
 
       <!-- Hinweislabel an Spieler/innen, dass Buchstabe eingegeben werden soll.  -->
-      <Label fx:id="enterLetterHere" layoutX="540.0" layoutY="381.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
+      <Label fx:id="enterLetterHere" layoutX="543.0" layoutY="381.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -70,14 +70,14 @@
       </Label>
 
       <!-- Fehlermeldung, wenn Duplikat eingegeben wurde.  -->
-      <Label fx:id="duplicate" blendMode="HARD_LIGHT" layoutX="531.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Oooooops, that's a duplicate!" textFill="#56fc2d" visible="false">
+      <Label fx:id="duplicate" alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" layoutX="525.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Oooooops, that's a duplicate!" textAlignment="CENTER" textFill="#56fc2d" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
 
       <!-- Fehlermeldung, wenn kein Buchstabe eingegeben wurde.  -->
-      <Label fx:id="errorNoLetter" blendMode="HARD_LIGHT" layoutX="531.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Please enter a letter." textFill="#56fc2d" visible="false">
+      <Label fx:id="errorNoLetter" alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" layoutX="524.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Please enter a Letter." textAlignment="CENTER" textFill="#56fc2d" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>

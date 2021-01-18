@@ -12,20 +12,20 @@ public class Gameplay {
 
     public final int MAXERRORS = 10;
 
-    //zählt Fehleranzahl im Laufe des Spiels hoch
+    //Zählt Fehleranzahl im Laufe des Spiels hoch.
     public int errorCount;
 
-    //speichert alle zuvor eingegebenen Buchstaben ab
+    //Speichert alle zuvor eingegebenen Buchstaben ab.
     public char[] allEnteredLetters;
 
-    //7Buchstaben des gesuchten Wortes mit Unterstrichen ersetzt in Array
+    //Buchstaben des gesuchten Wortes mit Unterstrichen ersetzt in Array.
     public char[] lines;
 
     //gesuchtes RandomWord
     public String wordToFind = " ";
 
-    //Konstruktor - setzt alles auf 0 oder benötigte Startwerte
-    public Gameplay(){
+    //Konstruktor - setzt alles auf 0 oder benötigte Startwerte.
+    public Gameplay() {
         this.curLetter = ' ';
         this.allEnteredLetters = new char[MAXERRORS];
         Arrays.fill(allEnteredLetters, ' ');
@@ -34,7 +34,7 @@ public class Gameplay {
         lines();
     }
 
-    //wählt das Wort aus String-Array aus
+    //Wählt das Wort aus String-Array aus.
     protected String randomWord() {
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
         //https://www.hangmanwords.com/words
@@ -48,7 +48,7 @@ public class Gameplay {
                 "potato", "wedge", "heel", "hand", "foot", "nose", "face", "mouth", "tongue", "johannes", "sven", "fingers", "toes", "line", "space",
                 "phone", "cord", "core", "grass", "trees", "birds", "animals", "lazy", "funny", "king", "queen", "heart", "heat", "cold",
                 "moon", "movie", "theater", "hairy", "small", "large", "huge", "donkey", "chicken", "pizza", "bread", "stones",
-                "sticks", "leaves", "letters", "alphabet", "soup", "hungry", "juergen", "michael", "tired","theresa", "sleepy", "noisy", "caring", "friends", "month", "light",
+                "sticks", "leaves", "letters", "alphabet", "soup", "hungry", "juergen", "michael", "tired", "theresa", "sleepy", "noisy", "caring", "friends", "month", "light",
                 "toothbrush", "savings", "bank", "account", "teller", "paper", "pencil", "coffee", "spirit", "ghost", "melon", "necklace",
                 "screen", "balloon", "string", "calendar", "work", "toys", "kids", "school", "class", "campus", "freedom", "liberty", "happiness",
                 "university", "message", "marker", "crayon", "eraser", "music", "lyrics", "songs", "ballads", "shapes", "triangle", "circle", "rectangle",
@@ -56,7 +56,7 @@ public class Gameplay {
                 "hockey", "lacrosse", "volleyball", "circuit", "blade", "scratch", "home", "house", "safe", "safety", "number", "count", "bear",
                 "goose", "lama", "panda", "lion", "tiger", "cheetah", "computer", "crackers", "rice", "shoes", "book", "story", "princess",
                 "prince", "jester", "court", "jury", "judge", "bench", "scandal", "name", "newspaper", "sebastian", "press", "shove", "tear", "magic", "tricks",
-                "cereal", "breakfast", "lunch", "dinner", "main", "course", "fork", "spoon","sara", "knife", "lamp", "desk", "bottle", "highlighter",
+                "cereal", "breakfast", "lunch", "dinner", "main", "course", "fork", "spoon", "sara", "knife", "lamp", "desk", "bottle", "highlighter",
                 "medicine", "seven", "flower", "rose", "petal", "abruptly", "absurd", "abyss", "affix", "askew", "avenue", "awkward", "axiom",
                 "azure", "bagpipes", "bandwagon", "banjo", "bayou", "beekeeper", "bikini", "blizzard", "boggle", "bookworm", "boxcar", "boxful",
                 "buckaroo", "buffalo", "buffoon", "buxom", "buzzard", "buzzing", "buzzwords", "caliph", "cobweb", "cockiness", "croquet", "crypt",
@@ -79,17 +79,17 @@ public class Gameplay {
         return wordToFind;
     }
 
-    //Array of characters mit der Länge String Wort, printet __
-   public char[] lines(){
+    //Array of characters mit der Länge des String wordToFind, einzelne chars mit Unterstrichen ersetzt.
+    public char[] lines() {
         this.lines = new char[wordToFind.length()];
-        for(int i=0; i<wordToFind.length(); i++){
+        for (int i = 0; i < wordToFind.length(); i++) {
             lines[i] = '_';
         }
         //System.out.println(lines);
         return lines;
     }
 
-    //es wird geprüft, ob Buchstabe schon einmal eingegeben wurde
+    //Es wird geprüft, ob Buchstabe schon einmal eingegeben wurdex.
     public boolean checkForDuplicates(String input) {
         this.curLetter = toLowerCase(input.charAt(0));
         char checkLetter = this.curLetter;
@@ -114,23 +114,21 @@ public class Gameplay {
         return duplicate;
     }
 
-    //überprüft, ob der Buchstabe im gesuchten Wort ist
+    //Überprüft, ob der Buchstabe im gesuchten Wort ist.
     public boolean checkLetter(char c, String s) {
-
         wordToFind = s;
         char noDuplicate = this.curLetter;
         boolean test = false;
         for (int i = 0; i < wordToFind.length(); i++) {
-            //.contains() benötigt Charsequence
             if (wordToFind.charAt(i) == noDuplicate) {
                 test = true;
                 lines[i] = noDuplicate;
             }
         }
-        if (!test){
-            errorCount ++;
-            //System.out.println("Oops! " + (MAXERRORS-errorCount) +" Lives left");
-        } return test;
+        if (!test) {
+            errorCount++;
+        }
+        return test;
     }
 }
 

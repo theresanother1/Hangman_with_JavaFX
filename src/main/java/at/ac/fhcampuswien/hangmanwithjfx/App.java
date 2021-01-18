@@ -16,12 +16,12 @@ public class App extends Application  {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //initialisiert 1. Seite
+        //Initialisiert 1. Seite.
         Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
         primaryStage.setTitle("This is HANGMAN!");
         primaryStage.setScene(new Scene(root, 845, 600));
 
-        //setzt Fenster auf fixe Größe
+        //Setzt Fenster auf fixe Größe.
         primaryStage.setResizable(false);
         primaryStage.show();
 
