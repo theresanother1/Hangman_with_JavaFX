@@ -130,10 +130,15 @@ public class PlayHangmanController implements Initializable {
                             .replace("]", " ")
                             .replace(",", " "));
 
-                    //Überprüft ob man gewonnen hat, wenn ja, setzt Aktionen, die notwendig sind, wenn das Spiel gewonnen wurde.
-                    youWonTheGame();
+                    //Überprüft, ob das Wort aus lines == thisWord.
+                    if ((Arrays.toString(gameplay.lines).replace("[", "")
+                            .replace("]", "")
+                            .replace(" ", "")
+                            .replace(",", "").equals(thisWord))) {
+                        youWonTheGame();
+                    }
                 }
-
+                //Wenn der Buchstabe nicht im Wort ist, wird else-Teil aufgerufen.
                 //Je nach Anzahl der Errors wird ein neues Hangmanbild auf visible gesetzt.
                 else {
 
@@ -198,14 +203,8 @@ public class PlayHangmanController implements Initializable {
 
     }
 
-    //Checkt, ob man gewonnen hat, setzt Aktionen, falls ja.
+    //Setzt jeweilige Komponenten visible/invisible, wenn man gewonnen hat.
     public void youWonTheGame() {
-
-        //Überprüft, ob das Wort aus lines == thisWord.
-        if ((Arrays.toString(gameplay.lines).replace("[", "")
-                .replace("]", "")
-                .replace(" ", "")
-                .replace(",", "").equals(thisWord))) {
 
             //Aktiviert uWin Bild und Buttons für quitGame & restart
             uWin.setVisible(true);
@@ -219,7 +218,7 @@ public class PlayHangmanController implements Initializable {
             continueButton.setVisible(false);
             checkThisInputLetter.setVisible(false);
         }
-    }
+
 
     //Setzt jeweilige Komponenten visible/invisible.
     public void youLostTheGame() {
