@@ -24,7 +24,21 @@
   <component name="ChangeListManager">
     <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Code leserlicher gemacht">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HangmanDesign9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HangmanPictures/HangmanDesign9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/startseite.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/startseite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ulost2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GifsForLoseOrWin/uLost.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/uwin.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GifsForLoseOrWin/uWin.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,20 +121,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise-7-theresanother1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PRG1InterfacesAbstractClassesExample" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\conta\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\.idea" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\java\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
       <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
@@ -128,6 +135,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\GifsForLoseOrWin" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\Background" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\HangmanPictures" />
+      <recent name="C:\Users\conta\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Hangman_with_JavaFX [run]">
@@ -303,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610971454726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Code leserlicher gemacht">
+      <created>1611160163007</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611160163007</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,42 +356,48 @@
     <option name="LAST_COMMIT_MESSAGE" value="Code leserlicher gemacht" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1610958512094">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="2606" y="234" key="FileChooserDialogImpl" timestamp="1611160191526">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610958512094" />
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1610972040275">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="2606" y="234" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160191526" />
+    <state width="1346" height="150" key="GridCell.Tab.0.bottom" timestamp="1611407363724">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
     <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610972040275" />
-    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1610972040275">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
+    <state width="1346" height="150" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611407363724" />
+    <state width="1346" height="150" key="GridCell.Tab.0.center" timestamp="1611407363724">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
     <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610972040275" />
-    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1610972040275">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
+    <state width="1346" height="150" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611407363724" />
+    <state width="1346" height="150" key="GridCell.Tab.0.left" timestamp="1611407363724">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
     <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610972040275" />
-    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1610972040275">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
+    <state width="1346" height="150" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611407363724" />
+    <state width="1346" height="150" key="GridCell.Tab.0.right" timestamp="1611407363724">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
     <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610972040275" />
-    <state x="2472" y="272" key="Vcs.Push.Dialog.v2" timestamp="1610971457039">
+    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
+    <state width="1346" height="150" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611407363724" />
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2" timestamp="1611160165542">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610971457039" />
-    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610626290035">
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160165542" />
+    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611406830240">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1610623966541" />
     <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626290035" />
+    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1611406830240" />
   </component>
 </project>
