@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Resources geordnet">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="zu langes Wort entfernt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -166,7 +168,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -185,7 +189,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -354,52 +360,7 @@
     <MESSAGE value="Stand 18.01" />
     <MESSAGE value="Code leserlicher gemacht" />
     <MESSAGE value="Resources geordnet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resources geordnet" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2606" y="234" key="FileChooserDialogImpl" timestamp="1611160191526">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610958512094" />
-    <state x="2606" y="234" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160191526" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom" timestamp="1611408337454">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
-    <state width="1493" height="150" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611408337454" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center" timestamp="1611408337454">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
-    <state width="1493" height="150" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611408337454" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left" timestamp="1611408337454">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
-    <state width="1493" height="150" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611408337454" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right" timestamp="1611408337454">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1236" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610625424614" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626722490" />
-    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160196050" />
-    <state width="1493" height="150" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611408337454" />
-    <state x="442" y="218" key="Vcs.Push.Dialog.v2" timestamp="1611407659746">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611160165542" />
-    <state x="442" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1611407659746" />
-    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611406830240">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="461" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1610623966541" />
-    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1610626290035" />
-    <state x="553" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1611406830240" />
+    <MESSAGE value="zu langes Wort entfernt" />
+    <option name="LAST_COMMIT_MESSAGE" value="zu langes Wort entfernt" />
   </component>
 </project>

@@ -39,8 +39,8 @@ public class Gameplay {
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
         //https://www.hangmanwords.com/words
         final String[] dictionary = {"abstraction", "ambiguous", "arithmetic", "backslash", "bitmap", "circumstance", "combination", "cafebabe",
-                "consortium", "decrementing", "dependency", "disambiguate", "dynamic", "encapsulate", "equivalent", "expression", "facilitate", "micro",
-                "fragment", "hexadecimal", "implement", "distinguish", "leon", "inheritance", "internet", "java", "localize",
+                "consortium", "decrement", "dependency", "dynamic", "encapsulate", "equivalent", "expression", "facilitate", "micro",
+                "fragment", "decimal", "implement", "distinguish", "leon", "inheritance", "internet", "java", "localize",
                 "navigation", "optimization", "parameter", "patrick", "pickle", "polymorphic", "rigorously", "specific",
                 "structure", "lexical", "likewise", "management", "manipulate", "mathematics", "hotjava", "vertex", "unsigned", "traditional",
                 "girl", "mother", "father", "sister", "love", "wind", "water", "study", "ball",
