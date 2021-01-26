@@ -15,7 +15,7 @@
          <!-- Startseite -->
 
       <!-- Startet das Spiel: -->
-      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="Take chance to survive.">
+      <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="I want to live!">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
@@ -206,14 +206,14 @@
       </ImageView>
 
       <!-- Button beendet das Spiel. -->
-      <Button fx:id="quitButton" blendMode="SCREEN" layoutX="482.0" layoutY="411.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="30.0" prefWidth="200.0" text="I've had enough" visible="false">
+      <Button fx:id="quitButton" blendMode="SCREEN" layoutX="482.0" layoutY="411.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="30.0" prefWidth="200.0" text="I've had enough." visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
       <!-- Button gibt Möglichkeit zum Neustarten des Spiels. -->
-      <Button fx:id="restartButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="restart the game anyway" visible="false">
+      <Button fx:id="restartButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>

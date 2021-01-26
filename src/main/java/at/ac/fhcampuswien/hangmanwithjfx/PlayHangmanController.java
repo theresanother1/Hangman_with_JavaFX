@@ -206,6 +206,7 @@ public class PlayHangmanController implements Initializable {
             uWin.setVisible(true);
             quitButton.setVisible(true);
             restartButton.setVisible(true);
+            restartButton.setText("Too easy, one more!");
             wordToCheck.setVisible(true);
 
             //Setzt alles, was nicht mehr gesehen werden soll, auf invisible.
@@ -223,6 +224,7 @@ public class PlayHangmanController implements Initializable {
         hangman10.setVisible(true);
         quitButton.setVisible(true);
         restartButton.setVisible(true);
+        restartButton.setText("Again in Zombiemode!");
         uLost.setVisible(true);
         wordToCheck.setVisible(true);
 
@@ -236,4 +238,6 @@ public class PlayHangmanController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
+
+
 }

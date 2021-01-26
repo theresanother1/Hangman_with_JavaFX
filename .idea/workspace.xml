@@ -22,8 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Enter-Button Funktion hinzugefügt, CSS Stylesheet erweitert">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Schriftgröße verändert">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611671509074</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Schriftgröße verändert">
+      <created>1611671790056</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611671790056</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,32 +380,33 @@
     <MESSAGE value="Resources geordnet" />
     <MESSAGE value="zu langes Wort entfernt" />
     <MESSAGE value="Enter-Button Funktion hinzugefügt, CSS Stylesheet erweitert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enter-Button Funktion hinzugefügt, CSS Stylesheet erweitert" />
+    <MESSAGE value="Schriftgröße verändert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schriftgröße verändert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1611669446669">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611669446669" />
-    <state width="976" height="200" key="GridCell.Tab.0.bottom" timestamp="1611671329712">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1611672913390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="976" height="200" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
-    <state width="976" height="200" key="GridCell.Tab.0.center" timestamp="1611671329712">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611672913390" />
+    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1611672913390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="976" height="200" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
-    <state width="976" height="200" key="GridCell.Tab.0.left" timestamp="1611671329712">
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611672913390" />
+    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1611672913390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="976" height="200" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
-    <state width="976" height="200" key="GridCell.Tab.0.right" timestamp="1611671329712">
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611672913390" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1611672913390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="976" height="200" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611671512429">
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611672913390" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611671792067">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671512429" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671792067" />
   </component>
 </project>
