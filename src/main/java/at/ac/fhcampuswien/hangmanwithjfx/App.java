@@ -1,15 +1,23 @@
 package at.ac.fhcampuswien.hangmanwithjfx;
 
+import at.ac.fhcampuswien.hangmanwithjfx.game.Gameplay;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+
 public class App extends Application  {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         System.out.println("blubb");
         launch(args);
     }
@@ -24,6 +32,8 @@ public class App extends Application  {
         //Setzt Fenster auf fixe Größe.
         primaryStage.setResizable(false);
         primaryStage.show();
-
     }
+
+
+
     }

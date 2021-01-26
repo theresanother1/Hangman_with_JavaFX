@@ -24,7 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="zu langes Wort entfernt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,27 +111,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PRG1InterfacesAbstractClassesExample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
-      <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\GifsForLoseOrWin" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\Background" />
       <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources\HangmanPictures" />
       <recent name="C:\Users\conta\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="at.ac.fhcampuswien.hangmanwithjfx.game" />
+      <recent name="at.ac.fhcampuswien.hangmanwithjfx" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\java\at\ac\fhcampuswien\hangmanwithjfx\game" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="C:\Users\Theresa\IdeaProjects\Hangman_with_JavaFX\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Hangman_with_JavaFX [run]">
@@ -147,9 +152,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -168,9 +171,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Hangman_with_JavaFX [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -189,9 +190,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -362,5 +361,27 @@
     <MESSAGE value="Resources geordnet" />
     <MESSAGE value="zu langes Wort entfernt" />
     <option name="LAST_COMMIT_MESSAGE" value="zu langes Wort entfernt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1611669446669">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611669446669" />
+    <state width="976" height="200" key="GridCell.Tab.0.bottom" timestamp="1611671329712">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="976" height="200" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
+    <state width="976" height="200" key="GridCell.Tab.0.center" timestamp="1611671329712">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="976" height="200" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
+    <state width="976" height="200" key="GridCell.Tab.0.left" timestamp="1611671329712">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="976" height="200" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
+    <state width="976" height="200" key="GridCell.Tab.0.right" timestamp="1611671329712">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="976" height="200" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611671329712" />
   </component>
 </project>

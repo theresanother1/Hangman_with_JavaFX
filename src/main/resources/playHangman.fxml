@@ -28,7 +28,7 @@
       </Button>
 
       <!-- Anfangsnachricht für Spieler/innen: -->
-      <Label fx:id="messageForUser" alignment="BOTTOM_CENTER" layoutX="358.0" layoutY="289.0" prefHeight="142.0" prefWidth="248.0" text="So you come here and expect &#10;to survive? One who comes &#10;here, will rot forever!! &#10;Though, I am willing to give you&#10;a chance to live: &#10;Let's play a little game... " textAlignment="CENTER" textFill="#f9fdfa" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+      <Label fx:id="messageForUser" alignment="BOTTOM_CENTER" layoutX="320.0" layoutY="289.0" prefHeight="142.0" prefWidth="327.0" text="So you come here and expect &#10;to survive? One who comes &#10;here, will rot forever!! &#10;Though, I am willing to give you&#10;a chance to live: &#10;Let's play a little game... " textAlignment="CENTER" textFill="#f9fdfa" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
          <font>
             <Font name="Cambria" size="18.0" />
          </font>
@@ -206,7 +206,7 @@
       </ImageView>
 
       <!-- Button beendet das Spiel. -->
-      <Button fx:id="quit" blendMode="SCREEN" layoutX="482.0" layoutY="411.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="30.0" prefWidth="200.0" text="I've had enough" visible="false">
+      <Button fx:id="quitButton" blendMode="SCREEN" layoutX="482.0" layoutY="411.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="30.0" prefWidth="200.0" text="I've had enough" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>

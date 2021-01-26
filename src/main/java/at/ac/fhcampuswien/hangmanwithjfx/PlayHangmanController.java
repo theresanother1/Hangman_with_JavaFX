@@ -3,21 +3,14 @@ package at.ac.fhcampuswien.hangmanwithjfx;
 import at.ac.fhcampuswien.hangmanwithjfx.game.Gameplay;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.net.URL;
-import java.time.chrono.IsoEra;
 import java.util.Arrays;
 import java.util.ResourceBundle;
 
@@ -50,15 +43,15 @@ public class PlayHangmanController implements Initializable {
     @FXML public ImageView uWin;
     @FXML public ImageView uLost;
 
-    //set invisible - Startlayout
+    //set invisible - Startlayout (Textfeld für Buchstaben der eingegeben wird.)
     @FXML public TextField checkThisInputLetter;
 
     //set visible - Startlayout
     @FXML private Button startButton;
-    @FXML private Button exitButton; //to give chance to end game
+    @FXML private Button exitButton;
     //set invisible - Startlayout
     @FXML public Button continueButton;
-    @FXML public Button quit;
+    @FXML public Button quitButton;
     @FXML public Button restartButton;
 
     //für Spiellogik
@@ -66,7 +59,7 @@ public class PlayHangmanController implements Initializable {
     public String thisWord;
 
     //Erstellt Objekt der Klasse Gameplay, wird in pressToPlay aufgerufen.
-    protected void setNewGame() {
+    protected void setNewGame(){
         this.gameplay = new Gameplay();
         this.thisWord = gameplay.wordToFind;
     }
@@ -79,7 +72,7 @@ public class PlayHangmanController implements Initializable {
 
     @FXML //Beendet das Spiel nach Durchlauf.
     protected void quitGame(ActionEvent a) {
-        Stage primaryStage = (Stage) quit.getScene().getWindow();
+        Stage primaryStage = (Stage) quitButton.getScene().getWindow();
         primaryStage.close();
     }
 
@@ -88,6 +81,9 @@ public class PlayHangmanController implements Initializable {
 
         //Initialisiert ein Objekt der Klasse Gameplay.
         setNewGame();
+
+        //Ermöglicht Buchstabeneingabe über Enter.
+        continueButton.setDefaultButton(true);
 
         //Übergibt das gesuchte Wort an das Label.
         wordToCheck.setText(thisWord);
@@ -190,7 +186,7 @@ public class PlayHangmanController implements Initializable {
         hangman10.setVisible(false);
         uLost.setVisible(false);
         uWin.setVisible(false);
-        quit.setVisible(false);
+        quitButton.setVisible(false);
         restartButton.setVisible(false);
         wordToCheck.setVisible(false);
 
@@ -208,7 +204,7 @@ public class PlayHangmanController implements Initializable {
 
             //Aktiviert uWin Bild und Buttons für quitGame & restart
             uWin.setVisible(true);
-            quit.setVisible(true);
+            quitButton.setVisible(true);
             restartButton.setVisible(true);
             wordToCheck.setVisible(true);
 
@@ -225,7 +221,7 @@ public class PlayHangmanController implements Initializable {
 
         //Alles Benötigte auf visible setzen.
         hangman10.setVisible(true);
-        quit.setVisible(true);
+        quitButton.setVisible(true);
         restartButton.setVisible(true);
         uLost.setVisible(true);
         wordToCheck.setVisible(true);
