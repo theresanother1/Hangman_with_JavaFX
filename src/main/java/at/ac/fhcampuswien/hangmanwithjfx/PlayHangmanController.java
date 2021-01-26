@@ -77,7 +77,7 @@ public class PlayHangmanController implements Initializable {
     }
 
     @FXML //Startet das Spiel.
-    protected void pressToPlay(ActionEvent actionEvent) throws Exception {
+    protected void pressToPlay(ActionEvent actionEvent) {
 
         //Initialisiert ein Objekt der Klasse Gameplay.
         setNewGame();
