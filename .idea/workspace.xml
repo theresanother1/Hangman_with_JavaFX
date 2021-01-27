@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Feinschliff">
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="GifPosition">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Dictionary.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_Hangman" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -360,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611673097827</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="GifPosition">
+      <created>1611673619166</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611673619166</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,32 +403,33 @@
     <MESSAGE value="Enter-Button Funktion hinzugefügt, CSS Stylesheet erweitert" />
     <MESSAGE value="Schriftgröße verändert" />
     <MESSAGE value="Feinschliff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feinschliff" />
+    <MESSAGE value="GifPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="GifPosition" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1611669446669">
+    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1611742119765">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611669446669" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1611673411611">
+    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611742119765" />
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1611753895188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673411611" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1611673411610">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
+    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1611753895188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673411610" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1611673411610">
+    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
+    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1611753895187">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673411610" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1611673411611">
+    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895187" />
+    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1611753895188">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673411611" />
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611673115073">
+    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611673621997">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673115073" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673621997" />
   </component>
 </project>
