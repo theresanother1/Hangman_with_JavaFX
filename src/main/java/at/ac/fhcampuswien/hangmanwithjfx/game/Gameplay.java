@@ -1,6 +1,5 @@
 package at.ac.fhcampuswien.hangmanwithjfx.game;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,25 +11,26 @@ import static java.lang.Character.toLowerCase;
 
 public class Gameplay {
 
-    //derzeitiger Buchstabe
+    //current Letter
     public char curLetter;
 
     public final int MAXERRORS = 10;
 
-    //Zählt Fehleranzahl im Laufe des Spiels hoch.
+    //updated with each error
     public int errorCount;
 
-    //Speichert alle zuvor eingegebenen Buchstaben ab.
+    //saves all entered letters for duplicate control
     public char[] allEnteredLetters;
 
-    //Buchstaben des gesuchten Wortes mit Unterstrichen ersetzt in Array.
+    //converts word into char array for the word with underlines
     public char[] lines;
 
-    //gesuchtes RandomWord
+    //the random word
     public String wordToFind = " ";
 
-    public String[] dictionary;
-    //Konstruktor - setzt alles auf 0 oder benötigte Startwerte.
+    public String currentWord;
+
+
     public Gameplay() {
         this.curLetter = ' ';
         this.allEnteredLetters = new char[MAXERRORS];
@@ -40,12 +40,11 @@ public class Gameplay {
         lines();
     }
 
-    //Wählt das Wort aus der Datei Dictionary aus.
+    //choose random word from Dictionary.txt
     public String randomWord(){
-
-        //Zählt die Zeilenanzahl in der Datei. Sollte erhalten bleiben, falls Datei ergänzt oder verkleinert wird.
         long linesInFile = 0;
         Path myPath = Paths.get(".././Hangman_with_JavaFX/src/main/resources/Dictionary.txt");
+        //counts lines in file
         try {
             linesInFile = Files.lines(myPath).count();
             System.out.println("Counted lines in file.");
@@ -55,11 +54,11 @@ public class Gameplay {
         }
         System.out.println(linesInFile);
 
-        //Random intialisieren, um eine zufällige Zeile zu ermitteln.
+        //get a random line
         Random random = new Random();
         int index = random.nextInt((int) linesInFile);
 
-        //Ordnet dem String specificWord das Wort aus der zufällig ermittelten Zeile zu.
+        //get string from random line
         try {
             this.wordToFind = Files.readAllLines(myPath).get(index);
             System.out.println(wordToFind);
@@ -71,17 +70,16 @@ public class Gameplay {
         return wordToFind;
     }
 
-    //Array of characters mit der Länge des String wordToFind, einzelne chars mit Unterstrichen ersetzt.
-    public char[] lines() {
+    //Array of characters with underlines
+    public void lines() {
         this.lines = new char[wordToFind.length()];
         for (int i = 0; i < wordToFind.length(); i++) {
             lines[i] = '_';
         }
         //System.out.println(lines);
-        return lines;
     }
 
-    //Es wird geprüft, ob Buchstabe schon einmal eingegeben wurdex.
+    //checks current letter for duplicate
     public boolean checkForDuplicates(String input) {
         this.curLetter = toLowerCase(input.charAt(0));
         char checkLetter = this.curLetter;
@@ -106,15 +104,13 @@ public class Gameplay {
         return duplicate;
     }
 
-    //Überprüft, ob der Buchstabe im gesuchten Wort ist.
-    public boolean checkLetter(char c, String s) {
-        wordToFind = s;
-        char noDuplicate = this.curLetter;
+    //checks if current letter is in the word
+    public boolean checkLetter() {
         boolean test = false;
         for (int i = 0; i < wordToFind.length(); i++) {
-            if (wordToFind.charAt(i) == noDuplicate) {
+            if (wordToFind.charAt(i) == curLetter) {
                 test = true;
-                lines[i] = noDuplicate;
+                lines[i] = curLetter;
             }
         }
         if (!test) {

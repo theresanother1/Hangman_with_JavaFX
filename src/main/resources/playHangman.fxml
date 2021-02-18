@@ -12,22 +12,22 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="845.0" styleClass="image" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.hangmanwithjfx.PlayHangmanController">
    <children>
-         <!-- Startseite -->
+         <!-- 1. Page -->
 
-      <!-- Startet das Spiel: -->
+      <!-- Starts the game: -->
       <Button fx:id="startButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="Take chance to survive.">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
-      <!-- Beendet das Spiel: -->
+      <!-- Ends the game: -->
       <Button fx:id="exitButton" blendMode="SCREEN" layoutX="290.0" layoutY="452.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="30.0" prefWidth="192.0" text="☠ We all die one day. ☠" visible="true">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <!-- Anfangsnachricht für Spieler/innen: -->
+      <!-- A message for the players in the beginning: -->
       <Label fx:id="messageForUser" alignment="BOTTOM_CENTER" layoutX="269.0" layoutY="199.0" prefHeight="222.0" prefWidth="423.0" text="So you come here and expect &#10;to survive? One who comes &#10;here, will rot forever!! &#10;Though, I am willing to give you&#10;a chance to live: &#10;Let's play a little game... " textAlignment="CENTER" textFill="#f9fdfa" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
          <font>
             <Font name="Cambria Italic" size="29.0" />
@@ -37,16 +37,16 @@
          </effect>
       </Label>
 
-      <!-- Spielseite:  -->
+      <!-- 2. Page:  -->
 
-      <!-- Mit Click wird der eingegebene Buchstabe überprüft -> Continue Game -->
+      <!-- Click this button to continue Game -->
       <Button fx:id="continueButton" blendMode="SCREEN" layoutX="483.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressToCheckLetter" prefHeight="30.0" prefWidth="230.0" text="Check your Letter here." visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <!-- Hier wird das Wort mit bereits gefunden Buchstaben ausgegeben. -->
+      <!-- Gives players output of the current state of the word. -->
       <Label fx:id="currentWordOutput" alignment="BOTTOM_CENTER" layoutX="390.0" layoutY="310.0" prefHeight="50.0" prefWidth="416.0" textAlignment="RIGHT" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="40.0" />
@@ -56,10 +56,10 @@
          </effect>
       </Label>
 
-      <!-- Textfeld für Benutzereingabe, eingegebener Buchstabe wird überprüft. -->
+      <!-- Textfield, in which players can enter their guesses, this letter will be checked. -->
       <TextField fx:id="checkThisInputLetter" layoutX="577.0" layoutY="413.0" prefHeight="26.0" prefWidth="46.0" visible="false" />
 
-      <!-- Hinweislabel an Spieler/innen, dass Buchstabe eingegeben werden soll.  -->
+      <!-- Shows players where to enter letter.  -->
       <Label fx:id="enterLetterHere" layoutX="543.0" layoutY="381.0" prefHeight="18.0" prefWidth="120.0" text="Enter your Letter here:" textAlignment="CENTER" textFill="#f9fdfa" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
@@ -69,21 +69,21 @@
          </effect>
       </Label>
 
-      <!-- Fehlermeldung, wenn Duplikat eingegeben wurde.  -->
+      <!-- Error warning, if the letter given is a duplicate -->
       <Label fx:id="duplicate" alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" layoutX="525.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Oooooops, that's a duplicate!" textAlignment="CENTER" textFill="#56fc2d" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
 
-      <!-- Fehlermeldung, wenn kein Buchstabe eingegeben wurde.  -->
+      <!-- Error warning, if player doesn't enter a letter at all  -->
       <Label fx:id="errorNoLetter" alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" layoutX="524.0" layoutY="487.0" prefHeight="18.0" prefWidth="153.0" text="Please enter a Letter." textAlignment="CENTER" textFill="#56fc2d" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Label>
 
-      <!-- Bilder des Hangman. 1-10 -->
+      <!-- Hangman Pictures. 1-10 -->
       <ImageView fx:id="hangman0" fitHeight="314.0" fitWidth="416.0" layoutX="14.0" layoutY="173.0" visible="false">
          <image>
             <Image url="@HangmanPictures/HangmanDesign0.gif" />
@@ -183,9 +183,9 @@
          </viewport>
       </ImageView>
 
-      <!-- Gewonnen bzw Verloren Seite:  -->
+      <!-- 3. Page:  -->
 
-      <!-- Gif wird angezeigt, wenn gewonnen.  -->
+      <!-- Show this GIF, if player wins.  -->
       <ImageView fx:id="uWin" fitHeight="204.0" fitWidth="272.0" layoutX="439.0" layoutY="170.0" visible="false">
          <image>
             <Image url="@GifsForLoseOrWin/uWin.gif" />
@@ -195,7 +195,7 @@
          </viewport>
       </ImageView>
 
-      <!-- Gif wird angezeigt, wenn verloren. -->
+      <!-- Show this GIF, if player loses. -->
       <ImageView fx:id="uLost" fitHeight="204.0" fitWidth="278.0" layoutX="436.0" layoutY="170.0" visible="false">
          <image>
             <Image url="@GifsForLoseOrWin/uLost.gif" />
@@ -205,21 +205,21 @@
          </viewport>
       </ImageView>
 
-      <!-- Button beendet das Spiel. -->
+      <!--End the game. -->
       <Button fx:id="quitButton" blendMode="SCREEN" layoutX="482.0" layoutY="411.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="30.0" prefWidth="200.0" text="I've had enough" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <!-- Button gibt Möglichkeit zum Neustarten des Spiels. -->
+      <!-- Restart the game -->
       <Button fx:id="restartButton" blendMode="SCREEN" layoutX="482.0" layoutY="452.0" mnemonicParsing="false" onAction="#pressToPlay" prefHeight="30.0" prefWidth="200.0" text="restart the game anyway" visible="false">
          <font>
             <Font name="Cambria" size="12.0" />
          </font>
       </Button>
 
-      <!-- Wort wird zum Schluss angezeigt, damit Spieler/innen sehen können, welches Wort gesucht war. -->
+      <!-- Shows the complete word from Dictionary.  -->
       <Label fx:id="wordToCheck" alignment="CENTER" layoutX="480.0" layoutY="366.0" prefHeight="42.0" prefWidth="201.0" textFill="#f2eeee" visible="false">
          <font>
             <Font name="Cambria" size="18.0" />

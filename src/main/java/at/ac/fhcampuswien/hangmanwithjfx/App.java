@@ -23,7 +23,7 @@ public class App extends Application  {
 
         /*
 
-        Skript zur Erstellung der Datei mit Wörtern drin
+        This created the .txt file for the words.
 
         //https://www.daniweb.com/programming/software-development/threads/168224/hangman-java-console-mode
         //https://www.hangmanwords.com/words
@@ -66,15 +66,13 @@ public class App extends Application  {
 
 
         Path myPath = Paths.get(".././Hangman_with_JavaFX/src/main/resources/Dictionary.txt");
-        //Erstellt das File am PC, falls es noch nicht vorhanden ist.
-        //1x als Skript ausführen, dann löschen, weil Datei ja dann im Projekt drinnen ist?
-
+        //creates a new file
         try {
-            //Checkt, ob die Datei schon vorhanden ist.
+            //check if file already exits
             if (new File(String.valueOf(myPath)).isFile()) {
                 System.out.println("File already exists.");
             }
-            //Wenn nicht, wird die Datei erstellt und Inhalt des Arrays hineingeschrieben.
+            //if not, create one & write contents of array to it
             else {
                 FileWriter writeIt = new FileWriter(new File(String.valueOf(myPath)));
                 for (String s : dictionary) {
@@ -95,13 +93,14 @@ public class App extends Application  {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        //Initialisiert 1. Seite.
+        //Initialize 1. page
         Parent root = FXMLLoader.load(getClass().getResource("/playHangman.fxml"));
         primaryStage.setTitle("This is HANGMAN!");
         primaryStage.setScene(new Scene(root, 845, 600));
 
-        //Setzt Fenster auf fixe Größe.
+        //Set Pop-Up Window to a fixed size
         primaryStage.setResizable(false);
+
         primaryStage.show();
     }
 

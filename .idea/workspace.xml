@@ -22,11 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="GifPosition">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Dictionary.txt" afterDir="false" />
+    <list default="true" id="1ab1d3fe-57b5-4bdc-a30d-2a837cb8574e" name="Default Changelist" comment="Wörter in Datei ausgelagert.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/PlayHangmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/fhcampuswien/hangmanwithjfx/game/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/playHangman.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_Hangman" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Files" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -369,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611673619166</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Wörter in Datei ausgelagert.">
+      <created>1611754125592</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611754125592</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,32 +412,37 @@
     <MESSAGE value="Schriftgröße verändert" />
     <MESSAGE value="Feinschliff" />
     <MESSAGE value="GifPosition" />
-    <option name="LAST_COMMIT_MESSAGE" value="GifPosition" />
+    <MESSAGE value="Wörter in Datei ausgelagert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wörter in Datei ausgelagert." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1611742119765">
+    <state x="2660" y="294" key="FileChooserDialogImpl" timestamp="1613642730671">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611742119765" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1611753895188">
+    <state x="2660" y="294" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1613642730671" />
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1611757098983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1611753895188">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611757098983" />
+    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1611757098983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1611753895187">
+    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611757098983" />
+    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1611757098983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895187" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1611753895188">
+    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611757098983" />
+    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1611757098983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611753895188" />
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611673621997">
+    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611757098983" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2" timestamp="1611754128264">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611673621997" />
+    <state x="1999" y="284" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611754128264" />
+    <state x="2697" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611757089396">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2697" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611757089396" />
   </component>
 </project>
